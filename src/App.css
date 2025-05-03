@@ -56,4 +56,8 @@
     @apply text-sm font-GeistMono font-normal text-white
   }
 
+  .line{
+    @apply w-screen h-[1px] bg-commands-gray
+  }
+
 }
