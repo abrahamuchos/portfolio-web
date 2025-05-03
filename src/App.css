@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 @layer base{
   @font-face {
     font-family: "InstrumentSans";
@@ -29,7 +22,11 @@
     font-weight: normal;
   }
   body{
-    @apply text-sm font-Instrument font-normal text-dirty-white bg-light-black
+    @apply text-sm font-Instrument font-normal text-dirty-white bg-light-black bg-grid bg-repeat bg-[size:24px_24px]
+  }
+
+  #root{
+    @apply max-w-[1350px] mx-auto px-4 lg:px-0 bg-dark-black min-h-screen
   }
 
 }

@@ -20,6 +20,9 @@ export default {
       'commands-gray': '#4c5056',
       'dark-gray': '#3b3a36',
       'border-gay': '#333',
+    },
+    backgroundImage: {
+      'grid': "url('assets/images/grid-bg.svg')",
     }
   },
   plugins: [],
