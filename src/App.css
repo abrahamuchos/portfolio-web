@@ -1,8 +1,62 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+@layer base{
+  @font-face {
+    font-family: "InstrumentSans";
+    src: url("assets/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "GameOverCre";
+    src: url("assets/fonts/gameovercre1 2.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "GeistMono";
+    src: url("assets/fonts/GeistMono-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  body{
+    @apply text-sm font-Instrument font-normal text-dirty-white bg-light-black
+  }
+
+}
+
+@layer utilities{
+  .heading-1{
+    @apply text-3xl lg:text-6xl font-Instrument font-medium text-light-white
+  }
+
+  .heading-2{
+    @apply text-2xl lg:text-4xl font-Instrument font-medium text-light-white
+  }
+
+  .heading-3{
+    @apply text-lg font-Instrument font-normal  text-dirty-white
+  }
+
+  .heading-4{
+    @apply text-sm font-Instrument font-normal  text-dirty-white
+  }
+
+  .consola-1{
+    @apply text-sm font-GeistMono font-normal text-commands-gray
+  }
+
+  .consola-2{
+    @apply text-sm font-GeistMono font-normal text-white
+  }
+
 }
