@@ -1,0 +1,8 @@
+.terminal-card{
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15)) drop-shadow(0px 25px 30px rgba(0, 0, 0, 0.35));
+}
+
+.terminal-title-bar{
+  box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.15), inset 0px -0.5px 0px rgba(0, 0, 0, 0.05);
+
+}

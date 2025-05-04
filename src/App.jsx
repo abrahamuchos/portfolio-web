@@ -4,7 +4,7 @@ import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import BaseLayout from "./layouts/BaseLayout.jsx";
 
-import './App.css'
+import './styles/App.css'
 import { BrowserRouter, Route, Routes } from "react-router";
 
 function App() {

@@ -5,19 +5,25 @@
 @layer base{
   @font-face {
     font-family: "InstrumentSans";
-    src: url("assets/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
+    src: url("../assets/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
     font-style: normal;
     font-weight: normal;
   }
   @font-face {
     font-family: "GameOverCre";
-    src: url("assets/fonts/gameovercre1 2.ttf");
+    src: url("../assets/fonts/gameovercre1 2.ttf");
     font-style: normal;
     font-weight: normal;
   }
   @font-face {
     font-family: "GeistMono";
-    src: url("assets/fonts/GeistMono-VariableFont_wght.ttf");
+    src: url("../assets/fonts/GeistMono-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_opsz,wght.ttf");
     font-style: normal;
     font-weight: normal;
   }
@@ -49,15 +55,14 @@
   }
 
   .consola-1{
-    @apply text-sm font-GeistMono font-normal text-commands-gray
+    @apply text-sm font-Geist font-normal text-commands-gray
   }
 
   .consola-2{
-    @apply text-sm font-GeistMono font-normal text-white
+    @apply text-sm font-Geist font-normal text-white tracking-wide
   }
 
   .line{
     @apply w-screen h-[1px] bg-commands-gray
   }
-
 }
