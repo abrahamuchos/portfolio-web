@@ -39,7 +39,7 @@
 
 @layer utilities{
   .heading-1{
-    @apply text-3xl lg:text-6xl font-Instrument font-medium text-light-white
+    @apply text-3xl lg:text-6xl font-Instrument font-medium text-light-white leading-10 lg:leading-[73px]
   }
 
   .heading-2{
@@ -60,6 +60,10 @@
 
   .consola-2{
     @apply text-sm font-Geist font-normal text-white tracking-wide
+  }
+
+  .paragraph{
+    @apply text-base lg:text-lg font-Instrument font-normal text-dirty-white
   }
 
   .line{

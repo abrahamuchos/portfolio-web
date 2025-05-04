@@ -22,7 +22,7 @@ export default {
         'border-gay': '#333',
       },
       backgroundImage: {
-        'grid': "url('assets/images/grid-bg.svg')",
+        'grid': "url('/src/assets/images/grid-bg.svg')",
       }
     },
   },
