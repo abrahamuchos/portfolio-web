@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/skills.css';
 
 import phpLogo from '../assets/images/logos/php-logo.svg'
 import jsLogo from '../assets/images/logos/js-logo.svg'
@@ -46,11 +45,17 @@ export default function Skills() {
       <h2 className='heading-2 mb-10'>Mi caja de herramientas.</h2>
 
       <div className="absolute line left-1/2 transform -translate-x-1/2 z-10"></div>
-      <div className="grid grid-cols-8 grid-rows-2 gap-0 relative">
-        <div className="absolute line left-1/2 transform -translate-x-1/2 top-1/2 z-10"></div>
+      {/*Grid Skills*/}
+      <div className="grid grid-cols-2 grid-rows-8 gap-0 relative
+        md:grid-cols-4 md:grid-rows-4
+        xl:grid-cols-8 xl:grid-rows-2 "
+      >
+        <div className="hidden xl:block absolute line left-1/2 transform -translate-x-1/2 top-1/2 z-10"></div>
         {skills.map((skill, index) => (
-          <div key={index}
-               className={`flex flex-col items-center justify-center ${(skills.length - 1 === index || skills.length / 2 - 1 === index) ? 'border-r-0' : 'border-r'} border-zinc-800 p-10 transition-colors hover:bg-zinc-900`}>
+          <div key={index} className={`flex flex-col items-center justify-center p-5 lg:p-10  border-b 
+            ${(skills.length - 1 === index || skills.length / 2 - 1 === index) ? 'xl:border-r-0' : 'xl:border-r'} 
+            border-zinc-800 transition-colors hover:bg-zinc-900`
+          }>
             <img src={skill.logo} alt={skill.name + ' logo'} className="w-14 h-14"/>
             <div className='min-h-[2.5em] mt-4 text-center font-Instrument text-white text-sm'>
               <p>{skill.name}</p>
@@ -59,10 +64,8 @@ export default function Skills() {
           </div>
         ))}
       </div>
+      {/*End Grid Skills*/}
       <div className="mb-[8px]"></div>
-
-
-
     </section>
   );
 }
