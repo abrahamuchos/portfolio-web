@@ -4,6 +4,7 @@ import SeparatorCommand from "../components/SeparatorCommand.jsx";
 import AboutUs from "../components/AboutUs.jsx";
 import Skills from "../components/Skills.jsx";
 import SoftSkills from "../components/SoftSkills.jsx";
+import Projects from "../components/Projects.jsx";
 
 export default function Home() {
   return (
@@ -39,6 +40,8 @@ export default function Home() {
           php artisan show:projects
         </SeparatorCommand>
       </div>
+
+      <Projects/>
 
       <div className="mt-10">
         <div>

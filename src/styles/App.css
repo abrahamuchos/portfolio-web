@@ -42,6 +42,8 @@ body {
 }
 
 @layer utilities {
+
+  /* Headings, Paragraphs, Consolas */
   .heading-1 {
     @apply text-3xl lg:text-6xl font-Instrument font-medium text-light-white leading-10 lg:leading-[73px]
   }
@@ -53,9 +55,16 @@ body {
   .heading-3 {
     @apply text-lg font-Instrument font-normal  text-dirty-white
   }
+  .heading-3-light-white {
+    @apply text-lg font-Instrument font-normal  text-light-white
+  }
 
   .heading-4 {
     @apply text-sm font-Instrument font-normal  text-dirty-white
+  }
+
+  .heading-4-light-white {
+    @apply text-sm font-Instrument font-normal  text-light-white
   }
 
   .consola-1 {
@@ -70,6 +79,9 @@ body {
     @apply text-base lg:text-lg font-Instrument font-normal text-dirty-white
   }
 
+  /* End Headings, Paragraphs, Consolas */
+
+  /* Components */
   .line {
     @apply w-screen h-[1px] bg-commands-gray
   }
@@ -77,5 +89,64 @@ body {
   .tabs {
     @apply text-base font-Geist font-normal text-light-white tracking-wide uppercase p-2.5 bg-very-dark-black border-2 border-dashed border-very-dark-gray  rounded
   }
+  /* End Components */
+
+  /*Cards*/
+  .card > .card-content > .card-title {
+    @apply heading-2 mb-5
+  }
+  .card > .card-content .card-subtitle {
+    @apply heading-4-light-white mb-5
+  }
+  .card > .card-content .card-paragraph {
+    @apply paragraph mb-5
+  }
+  .card > .card-img > img {
+    @apply w-full
+  }
+
+  .card.primary{
+    @apply w-full flex flex-col-reverse  items-center pt-0 bg-very-dark-black border-2 border-very-dark-gray rounded-2xl gap-2.5
+    md:flex-row md:p-10
+  }
+  .card.primary > .card-content {
+    @apply flex flex-col justify-start w-full md:w-1/2 text-left px-4 py-5 md:p-0
+  }
+  .card.primary > .card-img{
+    @apply w-full md:w-1/2 flex justify-end
+  }
+  .card.primary .btn-primary{
+    @apply w-fit self-end md:self-start
+  }
+
+  .card.secondary{
+    @apply w-full flex flex-col-reverse max-w-[448px] items-center pt-0 bg-very-dark-black border-2 border-very-dark-gray rounded-2xl gap-2.5
+  }
+  .card.secondary > .card-content {
+    @apply flex flex-col justify-start w-full text-left px-4 py-5
+  }
+  .card.secondary > .card-content > .card-title {
+    @apply heading-3-light-white mb-5
+  }
+  .card.secondary > .card-content .card-subtitle {
+    @apply heading-4-light-white mb-5
+  }
+  .card.secondary > .card-content .card-paragraph {
+    @apply text-sm font-Instrument font-normal text-dirty-white mb-5
+  }
+  .card.secondary > .card-img{
+    @apply w-full flex justify-end
+  }
+  .card.secondary .btn-primary{
+    @apply w-fit self-end
+  }
+  /*End Cards*/
+
+
+  /* Buttons */
+  .btn-primary {
+    @apply text-sm md:text-base font-Geist font-normal text-white tracking-wide uppercase py-2.5 px-[15px] bg-black border-2 border-very-dark-gray  rounded hover:cursor-pointer transition-colors hover:bg-zinc-900
+  }
+  /* Buttons */
 
 }

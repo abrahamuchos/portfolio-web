@@ -13,7 +13,7 @@ export default function SoftSkills() {
         Más allá de lo técnico: Habilidades esenciales para el  éxito
       </h2>
 
-      <div className='flex justify-between mt-9'>
+      <div className='flex flex-col justify-between mt-9 gap-10 md:flex-row md:gap-2'>
         {skills.map((skill, index) => (
           <div key={index} className='tabs'>
             <p>{skill.name}</p>
