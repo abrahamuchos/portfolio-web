@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   overflow-x: hidden;
 }
 
-@layer base{
+@layer base {
   @font-face {
     font-family: "InstrumentSans";
     src: url("../assets/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
@@ -31,46 +31,51 @@ body{
     font-style: normal;
     font-weight: normal;
   }
-  body{
+  body {
     @apply text-sm font-Instrument font-normal text-dirty-white bg-light-black bg-grid bg-repeat bg-[size:24px_24px]
   }
 
-  #root{
+  #root {
     @apply max-w-[1350px] mx-auto px-4 lg:px-0 bg-dark-black min-h-screen
   }
 
 }
 
-@layer utilities{
-  .heading-1{
+@layer utilities {
+  .heading-1 {
     @apply text-3xl lg:text-6xl font-Instrument font-medium text-light-white leading-10 lg:leading-[73px]
   }
 
-  .heading-2{
+  .heading-2 {
     @apply text-2xl lg:text-4xl font-Instrument font-medium text-light-white
   }
 
-  .heading-3{
+  .heading-3 {
     @apply text-lg font-Instrument font-normal  text-dirty-white
   }
 
-  .heading-4{
+  .heading-4 {
     @apply text-sm font-Instrument font-normal  text-dirty-white
   }
 
-  .consola-1{
+  .consola-1 {
     @apply text-sm font-Geist font-normal text-commands-gray
   }
 
-  .consola-2{
+  .consola-2 {
     @apply text-sm font-Geist font-normal text-white tracking-wide
   }
 
-  .paragraph{
+  .paragraph {
     @apply text-base lg:text-lg font-Instrument font-normal text-dirty-white
   }
 
-  .line{
+  .line {
     @apply w-screen h-[1px] bg-commands-gray
   }
+
+  .tabs {
+    @apply text-base font-Geist font-normal text-light-white tracking-wide uppercase p-2.5 bg-very-dark-black border-2 border-dashed border-very-dark-gray  rounded
+  }
+
 }
