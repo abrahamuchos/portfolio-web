@@ -9,6 +9,7 @@ export default function BaseLayout() {
       <Navigation/>
       <main className='flex-grow px-2 lg:px-12'>
         <Outlet/>
+
       </main>
       <Footer/>
     </div>

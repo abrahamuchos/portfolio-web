@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 import mailIcon from '../assets/icons/mail.svg'
 import copyIcon from '../assets/icons/copy.svg'
@@ -7,9 +7,12 @@ import githubIcon from '../assets/icons/github.svg'
 import otherPageIcon from '../assets/icons/page-blank-icon.svg'
 
 import '../styles/contact-card.css';
+import InfoPill from "./InfoPill.jsx";
 
 export default function ContactCard() {
   const copyRef = useRef(null);
+  const [isShowPill, setIsShowPill] = useState(/** @type {boolean} */ false)
+  const [messagePill, setMessagePill] = useState(/** @type {string|null} */ null)
 
   /**
    *
@@ -23,6 +26,8 @@ export default function ContactCard() {
     if(navigator.clipboard && navigator.clipboard.writeText){
       try{
         await navigator.clipboard.writeText(text);
+        setIsShowPill(true);
+        setMessagePill(`${text} ¡Fue copiado al portapapeles!`)
         console.log('Texto copiado al portapapeles:', text);
 
       }catch(err) {
@@ -81,8 +86,7 @@ export default function ContactCard() {
       </div>
       <div className="z-1 pointer-events-none absolute inset-0 bg-[url('../assets/images/noise.webp')] mix-blend-soft-light"></div>
 
-
-
+      <InfoPill message={messagePill} isShow={isShowPill}/>
     </div>
   );
 }
