@@ -5,6 +5,7 @@ import AboutUs from "../components/AboutUs.jsx";
 import Skills from "../components/Skills.jsx";
 import SoftSkills from "../components/SoftSkills.jsx";
 import Projects from "../components/Projects.jsx";
+import ContactCard from "../components/ContactCard.jsx";
 
 export default function Home() {
   return (
@@ -43,30 +44,15 @@ export default function Home() {
 
       <Projects/>
 
-      <div className="mt-10">
-        <div>
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, consectetur corporis earum, error est
-            eveniet ex minima modi odio officiis perspiciatis possimus praesentium quae reprehenderit rerum sit velit!
-            Animi, voluptate?
-          </div>
-          <div>A accusamus ad adipisci autem corporis debitis delectus distinctio dolorem ea enim error facilis ipsam
-            iusto labore modi non optio provident qui quibusdam quod repellendus sed suscipit temporibus, vero
-            voluptate.
-          </div>
-          <div>Atque hic id ipsa, iste libero placeat provident sint? Amet, facere laborum nihil quos sit veniam!
-            Architecto autem expedita facere illum impedit labore laborum, minima nemo, nulla sit totam vitae.
-          </div>
-          <div>Ad, explicabo facere illum perspiciatis quo voluptatem. Cupiditate ea eaque maiores pariatur possimus,
-            provident rerum saepe tempora veritatis! Architecto asperiores at autem, consequatur dignissimos dolore
-            libero minus pariatur provident ut.
-          </div>
-          <div>Aperiam at beatae ea eius fugiat officiis omnis, sapiente. Amet, blanditiis consectetur corporis cum
-            deserunt ducimus earum fuga id inventore magni molestias nisi non nostrum, nulla pariatur, quibusdam saepe
-            sed?
-          </div>
-        </div>
+      <div className='relative my-10 lg:mb-12'>
+        <SeparatorCommand>
+          php artisan contact:list
+        </SeparatorCommand>
       </div>
 
+      <section className='w-full mt-16 mb-20'>
+        <ContactCard/>
+      </section>
 
     </>
   );
