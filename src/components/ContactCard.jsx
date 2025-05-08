@@ -15,7 +15,7 @@ export default function ContactCard() {
   const [messagePill, setMessagePill] = useState(/** @type {string|null} */ null)
 
   /**
-   *
+   * Handle copy click, use navigator api to copy text to clipboard and show message pill
    * @param {Event} e - event
    * @returns {Promise<void>}
    */
@@ -28,7 +28,6 @@ export default function ContactCard() {
         await navigator.clipboard.writeText(text);
         setIsShowPill(true);
         setMessagePill(`${text} ¡Fue copiado al portapapeles!`)
-        console.log('Texto copiado al portapapeles:', text);
 
       }catch(err) {
         console.error('Error al copiar al portapapeles:', err);
