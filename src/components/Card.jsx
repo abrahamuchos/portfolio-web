@@ -12,7 +12,7 @@ export default function Card({variant = 'primary', title, subtitle, description,
               <button className="btn-primary">Leer más</button>
             </div>
             <div className="card-img">
-              <img src={image} alt={title} className='rounded-tl-2xl rounded-tr-2xl md:rounded-2xl'/>
+              <img src={image} alt={title}/>
             </div>
           </div>
 
@@ -26,7 +26,7 @@ export default function Card({variant = 'primary', title, subtitle, description,
               <button className="btn-primary">Leer más</button>
             </div>
             <div className="card-img">
-              <img src={image} alt={title} className='rounded-tl-2xl rounded-tr-2xl md:rounded-2xl'/>
+              <img src={image} alt={title}/>
             </div>
           </div>
         )

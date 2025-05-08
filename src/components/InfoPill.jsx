@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 
-import "../styles/contact-card.css";
-
 /**
  *
  * @param {string} message

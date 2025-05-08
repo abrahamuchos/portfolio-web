@@ -45,11 +45,11 @@ body {
 
   /* Headings, Paragraphs, Consolas */
   .heading-1 {
-    @apply text-3xl lg:text-6xl font-Instrument font-medium text-light-white leading-10 lg:leading-[73px]
+    @apply text-3xl md:text-4xl lg:text-6xl font-Instrument font-medium text-light-white leading-10 lg:leading-[73px]
   }
 
   .heading-2 {
-    @apply text-2xl lg:text-4xl font-Instrument font-medium text-light-white
+    @apply text-2xl md:text-3xl lg:text-4xl font-Instrument font-medium text-light-white
   }
 
   .heading-3 {
@@ -115,6 +115,9 @@ body {
   .card.primary > .card-img{
     @apply w-full md:w-1/2 flex justify-end
   }
+  .card.primary > .card-img > img {
+    @apply rounded-tl-2xl rounded-tr-2xl md:rounded-2xl
+  }
   .card.primary .btn-primary{
     @apply w-fit self-end md:self-start
   }
@@ -136,6 +139,9 @@ body {
   }
   .card.secondary > .card-img{
     @apply w-full flex justify-end
+  }
+  .card.secondary > .card-img > img{
+    @apply rounded-t-2xl
   }
   .card.secondary .btn-primary{
     @apply w-fit self-end
