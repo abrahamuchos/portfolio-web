@@ -109,6 +109,9 @@ body {
     @apply w-full flex flex-col-reverse  items-center pt-0 bg-very-dark-black border-2 border-very-dark-gray rounded-2xl gap-2.5
     md:flex-row md:p-10
   }
+  .card.primary > .card-content > .card-title {
+    @apply heading-2 mb-5 vertical-truncate-text max-h-[2.6em]
+  }
   .card.primary > .card-content {
     @apply flex flex-col justify-start w-full md:w-1/2 text-left px-4 py-5 md:p-0
   }
@@ -125,17 +128,20 @@ body {
   .card.secondary{
     @apply w-full flex flex-col-reverse max-w-[448px] items-center pt-0 bg-very-dark-black border-2 border-very-dark-gray rounded-2xl gap-2.5
   }
+  .card.secondary > .card-content > .card-title {
+    @apply truncate
+  }
   .card.secondary > .card-content {
     @apply flex flex-col justify-start w-full text-left px-4 py-5
   }
   .card.secondary > .card-content > .card-title {
-    @apply heading-3-light-white mb-5
+    @apply heading-3-light-white mb-5 truncate
   }
   .card.secondary > .card-content .card-subtitle {
-    @apply heading-4-light-white mb-5
+    @apply heading-4-light-white mb-5 truncate
   }
   .card.secondary > .card-content .card-paragraph {
-    @apply text-sm font-Instrument font-normal text-dirty-white mb-5
+    @apply text-sm font-Instrument font-normal text-dirty-white mb-5 h-[3em] vertical-truncate-text
   }
   .card.secondary > .card-img{
     @apply w-full flex justify-end
@@ -155,4 +161,11 @@ body {
   }
   /* Buttons */
 
+  .vertical-truncate-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
