@@ -1,22 +1,29 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import "../styles/contact-card.css";
 
-export default function InfoPill({message, duration= 5000, isShow = false}) {
-  const [isVisible, setIsVisible] = useState(/**@type {boolean}*/isShow);
+/**
+ *
+ * @param {string} message
+ * @param {number} [duration=5000] - Duration in milliseconds
+ * @param {boolean} [isShow=false] - Whether the pill is shown
+ * @param @param {function(boolean): void} setIsShow - Function to update the isShow state
+ * @returns {JSX.Element|null}
+ * @constructor
+ */
+export default function InfoPill({message, duration= 5000, isShow = false, setIsShow}) {
 
   useEffect(() => {
     if(!isShow) return;
-    setIsVisible(true);
     const timer = setTimeout(() => {
-      setIsVisible(false);
+      setIsShow(false);
     }, duration);
 
     return () => clearTimeout(timer);
   }, [isShow]);
 
 
-  if(!isVisible){
+  if(!isShow){
     return null;
   }
 

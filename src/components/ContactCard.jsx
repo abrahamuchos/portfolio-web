@@ -32,10 +32,12 @@ export default function ContactCard() {
 
       }catch(err) {
         console.error('Error al copiar al portapapeles:', err);
+        setMessagePill('Upps, algo salio mal. Intenta de nuevo.')
       }
 
     }else{
       console.warn('La API del Portapapeles no está disponible.');
+      setMessagePill('Upps, no vamos a poder copiarlo al portapapeles')
     }
   }
 
@@ -86,7 +88,7 @@ export default function ContactCard() {
       </div>
       <div className="z-1 pointer-events-none absolute inset-0 bg-[url('../assets/images/noise.webp')] mix-blend-soft-light"></div>
 
-      <InfoPill message={messagePill} isShow={isShowPill}/>
+      <InfoPill message={messagePill} isShow={isShowPill} setIsShow={setIsShowPill} />
     </div>
   );
 }
