@@ -1,23 +1,50 @@
+import myFirstPost from "./posts/myFirstPost.js";
+
+/**
+ * @typedef {Object} Post
+ * @property {string} title
+ * @property {string} subtitle
+ * @property {string} description
+ * @property {string} content -HTML content
+ * @property {string} slug
+ * @property {string} date
+ * @property {string} header
+ * @property {Array<{name: string, icon: string}>} stacks
+ * @property {Array<string|null>} images
+ */
+/**
+ *
+ * @type Array<Post> posts
+ */
 export const posts = [
   {
-    // title: "My first post ",
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet.  ",
-    subtitle: "This is my first post",
-    description: "This is my first post",
-    content: "This is my first post",
     slug: "my-first-post",
-    date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png'
+    subtitle: myFirstPost.subtitle,
+    header: myFirstPost.header,
+    description: myFirstPost.description,
+    date: myFirstPost.date,
+    stacks: myFirstPost.stacks,
+    images: myFirstPost.images,
+    content: myFirstPost.content
   },
   {
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet. Sed dignissim eros tincidunt nulla tincidunt laoreet.",
-    // subtitle: "This is my second post",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet. Sed dignissim eros tincidunt nulla tincidunt laoreet.",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ac metus sed porttitor. Sed eu maximus ligula, ac molestie augue.",
     content: "This is my second post",
     slug: "my-second-post",
     date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png'
+    header: '/src/assets/images/posts/image-post.png',
+    stacks: [
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'PostgreSQL', icon: 'react-color-logo'},
+      {name: 'Bootstrap', icon: 'bootstrap-color-logo'},
+      {name: 'SCSS', icon: 'sass-color-logo'},
+      {name: 'Trello', icon: 'trello-color-logo'},
+      {name: 'Git', icon: 'git-color-logo'},
+    ],
   },
   {
     title: "My third post",
@@ -26,7 +53,16 @@ export const posts = [
     content: "This is my third post",
     slug: "my-third-post",
     date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png'
+    header: '/src/assets/images/posts/image-post.png',
+    stacks: [
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'PostgreSQL', icon: 'react-color-logo'},
+      {name: 'Bootstrap', icon: 'bootstrap-color-logo'},
+      {name: 'SCSS', icon: 'sass-color-logo'},
+      {name: 'Trello', icon: 'trello-color-logo'},
+      {name: 'Git', icon: 'git-color-logo'},
+    ],
   },
   {
     title: "My fourth post",
@@ -35,7 +71,16 @@ export const posts = [
     content: "This is my fourth post",
     slug: "my-fourth-post",
     date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png'
+    header: '/src/assets/images/posts/image-post.png',
+    stacks: [
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'PostgreSQL', icon: 'react-color-logo'},
+      {name: 'Bootstrap', icon: 'bootstrap-color-logo'},
+      {name: 'SCSS', icon: 'sass-color-logo'},
+      {name: 'Trello', icon: 'trello-color-logo'},
+      {name: 'Git', icon: 'git-color-logo'},
+    ],
   },
   {
     title: "My fifth post",
@@ -44,7 +89,16 @@ export const posts = [
     content: "This is my fifth post",
     slug: "my-fifth-post",
     date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png'
+    header: '/src/assets/images/posts/image-post.png',
+    stacks: [
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'PostgreSQL', icon: 'react-color-logo'},
+      {name: 'Bootstrap', icon: 'bootstrap-color-logo'},
+      {name: 'SCSS', icon: 'sass-color-logo'},
+      {name: 'Trello', icon: 'trello-color-logo'},
+      {name: 'Git', icon: 'git-color-logo'},
+    ],
   },
   {
     title: "My sixth post",
@@ -53,7 +107,16 @@ export const posts = [
     content: "This is my sixth post",
     slug: "my-sixth-post",
     date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png'
+    header: '/src/assets/images/posts/image-post.png',
+    stacks: [
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'PostgreSQL', icon: 'react-color-logo'},
+      {name: 'Bootstrap', icon: 'bootstrap-color-logo'},
+      {name: 'SCSS', icon: 'sass-color-logo'},
+      {name: 'Trello', icon: 'trello-color-logo'},
+      {name: 'Git', icon: 'git-color-logo'},
+    ],
   },
   {
     title: "My seventh post",
@@ -62,6 +125,15 @@ export const posts = [
     content: "This is my seventh post",
     slug: "my-seventh-post",
     date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png'
+    header: '/src/assets/images/posts/image-post.png',
+    stacks: [
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'Laravel', icon: 'laravel-color-logo'},
+      {name: 'PostgreSQL', icon: 'react-color-logo'},
+      {name: 'Bootstrap', icon: 'bootstrap-color-logo'},
+      {name: 'SCSS', icon: 'sass-color-logo'},
+      {name: 'Trello', icon: 'trello-color-logo'},
+      {name: 'Git', icon: 'git-color-logo'},
+    ],
   },
 ];

@@ -1,7 +1,7 @@
 import React from 'react';
-import SeparatorCommand from "../components/SeparatorCommand.jsx";
 import { posts } from "../assets/data/posts.js";
 import Card from "../components/Card.jsx";
+import SeparatorCommand from "../components/SeparatorCommand.jsx";
 import ContactCard from "../components/ContactCard.jsx";
 
 export default function Projects() {
@@ -25,6 +25,7 @@ export default function Projects() {
             subtitle={firstPost.subtitle}
             description={firstPost.description}
             image={firstPost.header}
+            link={`/projects/${firstPost.slug}`}
           />
         </div>
         <div className="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-3">
@@ -36,6 +37,7 @@ export default function Projects() {
               subtitle={post.subtitle}
               description={post.description}
               image={post.header}
+              link={`/projects/${post.slug}`}
             />
           ))}
         </div>
