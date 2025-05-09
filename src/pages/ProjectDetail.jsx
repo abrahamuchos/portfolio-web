@@ -5,11 +5,14 @@ import { posts } from "../assets/data/posts.js";
 import SeparatorCommand from "../components/SeparatorCommand.jsx";
 import Stack from "../components/Stack.jsx";
 import ContactCard from "../components/ContactCard.jsx";
+import { ImageGallery } from "react-image-grid-gallery";
+import ProjectControls from "../components/ProjectControls.jsx";
+
 
 export default function ProjectDetail() {
-
   const {slug} = useParams();
   const post = posts.find((post) => post.slug === slug);
+
 
   if (!post) {
     return <div>Project not found</div>;
@@ -31,7 +34,18 @@ export default function ProjectDetail() {
         <div dangerouslySetInnerHTML={{__html: post.content}} className='mt-12'></div>
       </article>
 
+      {/*Gallery*/}
+      {post.images.length ?
+        <section className='w-full mt-10'>
+          <ImageGallery imagesInfoArray={post.images}/>
+        </section>
+        : null
+      }
+      {/*End Gallery*/}
 
+      <ProjectControls className='mt-32 mb-16' postId={post.id}/>
+
+      {/*Contact*/}
       <div className='relative my-10 lg:mb-12'>
         <SeparatorCommand>
           php artisan contact:list
@@ -41,7 +55,7 @@ export default function ProjectDetail() {
       <section className='w-full mt-16 mb-20'>
         <ContactCard/>
       </section>
-
+      {/*End Contact*/}
 
     </>
   );

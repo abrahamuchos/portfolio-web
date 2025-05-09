@@ -16,9 +16,9 @@ const stacks= [
   {name: 'Git', icon: 'git-color-logo.png'},
 ];
 
-const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full'>\n" +
-  "<h2>Nam efficitur cursus dolor feugiat congue. </h2>\n" +
-  "<p>\n" +
+const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full mb-8'>\n" +
+  "<h2 class='heading-3 mb-2'>Nam efficitur cursus dolor feugiat congue. </h2>\n" +
+  "<p class='paragraph-2  mb-8'>\n" +
   "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur cursus dolor feugiat congue. Suspendisse\n" +
   "  volutpat ac metus sed porttitor. Sed eu maximus ligula, ac molestie augue. Nulla suscipit cursus auctor. Quisque sit\n" +
   "  amet ullamcorper elit. Nullam vitae nunc ut turpis placerat tincidunt id quis elit. Aliquam fringilla orci nec tortor\n" +
@@ -28,14 +28,14 @@ const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-ima
   "  scelerisque, sem tortor sagittis odio, malesuada convallis nulla massa eu erat. Curabitur non erat nec risus\n" +
   "  condimentum ultrices sed vel erat. Praesent mattis erat quam, a finibus eros fermentum molestie.\n" +
   "</p>\n" +
-  "<img src=\"/src/assets/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full'>\n" +
-  "<p>\n" +
+  "<img src=\"/src/assets/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full mb-8'>\n" +
+  "<p class='paragraph-2 mb-4'>\n" +
   "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non metus metus. Etiam in venenatis nibh. Nulla ac\n" +
   "  sodales nibh, ac convallis mi. Integer at congue turpis. Vivamus rhoncus ultricies volutpat. Interdum et malesuada\n" +
   "  fames ac ante ipsum primis in faucibus. Praesent commodo rutrum dui, at cursus tellus tincidunt eu. Integer\n" +
   "  ullamcorper cursus nunc id porta. Donec congue dolor dapibus, ullamcorper diam non, condimentum nibh.\n" +
   "</p>\n" +
-  "<p>\n" +
+  "<p class='paragraph-2 mb-4'>\n" +
   "  Pellentesque pellentesque, risus ac sodales egestas, sapien sem pretium leo, sit amet mattis tortor nibh placerat\n" +
   "  metus. Nulla varius tortor vitae quam accumsan, at tempus nisi hendrerit. Cras et leo ex. Pellentesque eleifend\n" +
   "  pharetra elit at pharetra. Ut elementum neque sed dolor accumsan, et rhoncus nulla imperdiet. Ut at convallis nulla.\n" +
@@ -44,7 +44,7 @@ const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-ima
   "  vel. Nunc mollis nisl non justo iaculis molestie. Nulla et dui in massa condimentum auctor vel nec lorem. Nunc ac\n" +
   "  rutrum orci.\n" +
   "</p>\n" +
-  "<p>\n" +
+  "<p class='paragraph-2 mb-4'>\n" +
   "  \n" +
   "  Nunc elementum tellus sed eros mollis, non posuere dolor faucibus. Morbi tincidunt auctor purus ut maximus. Aliquam\n" +
   "  erat volutpat. Morbi eleifend eleifend metus sit amet lobortis. Integer efficitur sapien ut iaculis ultrices. Nunc\n" +
@@ -52,7 +52,7 @@ const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-ima
   "  posuere magna. Duis scelerisque, felis nec tristique vestibulum, nibh justo molestie dui, sit amet porttitor dolor\n" +
   "  enim vel dolor.\n" +
   "</p>\n" +
-  "<p>\n" +
+  "<p class='paragraph-2 mb-4'>\n" +
   "  Sed porttitor pretium neque vel accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames\n" +
   "  ac turpis egestas. Fusce sed massa ac metus aliquam iaculis. Sed quis nulla sed velit vehicula commodo vel ut sapien.\n" +
   "  Etiam efficitur nunc ut massa placerat vehicula. Praesent lobortis maximus vulputate. Mauris efficitur lorem nulla,\n" +
@@ -62,8 +62,26 @@ const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-ima
   "</p>"
 
 const images=[
-  '/src/assets/images/posts/my-first-post/test-post-image.png',
-  '/src/assets/images/posts/my-first-post/test-2.png'
+  {
+    id: '1',
+    alt: 'image',
+    src: '/src/assets/images/posts/my-first-post/test-post-image.png',
+    caption: 'Esta es el home'
+  },{
+    id: '2',
+    alt: 'image',
+    src: '/src/assets/images/posts/my-first-post/test-2.png'
+  },{
+    id: '3',
+    alt: 'image',
+    src: '/src/assets/images/posts/my-first-post/test-post-image.png',
+    caption: 'Esta es el otro home'
+  },
+  {
+    id: '4',
+    alt: 'image',
+    src: '/src/assets/images/posts/my-first-post/test-post-image.png'
+  },
 ];
 
 export default {header, date, stacks, content, subtitle, description, images}

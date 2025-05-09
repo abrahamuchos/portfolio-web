@@ -1,5 +1,3 @@
-import myFirstPost from "./posts/myFirstPost.js";
-
 /**
  * @typedef {Object} Post
  * @property {string} title
@@ -10,14 +8,18 @@ import myFirstPost from "./posts/myFirstPost.js";
  * @property {string} date
  * @property {string} header
  * @property {Array<{name: string, icon: string}>} stacks
- * @property {Array<string|null>} images
+ * @property {Array<{id: string, alt: string, src: string, [caption]: string }>} images
  */
+import myFirstPost from "./posts/myFirstPost.js";
+
+
 /**
- *
+ * Posts Array
  * @type Array<Post> posts
  */
 export const posts = [
   {
+    id: 1,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet.  ",
     slug: "my-first-post",
     subtitle: myFirstPost.subtitle,
@@ -29,6 +31,7 @@ export const posts = [
     content: myFirstPost.content
   },
   {
+    id: 2,
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet. Sed dignissim eros tincidunt nulla tincidunt laoreet.",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet. Sed dignissim eros tincidunt nulla tincidunt laoreet.",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ac metus sed porttitor. Sed eu maximus ligula, ac molestie augue.",
@@ -36,6 +39,7 @@ export const posts = [
     slug: "my-second-post",
     date: "2021-01-01",
     header: '/src/assets/images/posts/image-post.png',
+    images: myFirstPost.images,
     stacks: [
       {name: 'Laravel', icon: 'laravel-color-logo'},
       {name: 'Laravel', icon: 'laravel-color-logo'},
@@ -47,6 +51,7 @@ export const posts = [
     ],
   },
   {
+    id: 3,
     title: "My third post",
     subtitle: "This is my third post",
     description: "This is my third post",
@@ -54,6 +59,7 @@ export const posts = [
     slug: "my-third-post",
     date: "2021-01-01",
     header: '/src/assets/images/posts/image-post.png',
+    images: myFirstPost.images,
     stacks: [
       {name: 'Laravel', icon: 'laravel-color-logo'},
       {name: 'Laravel', icon: 'laravel-color-logo'},
@@ -65,6 +71,7 @@ export const posts = [
     ],
   },
   {
+    id: 4,
     title: "My fourth post",
     subtitle: "This is my fourth post",
     description: "This is my fourth post",
@@ -72,6 +79,7 @@ export const posts = [
     slug: "my-fourth-post",
     date: "2021-01-01",
     header: '/src/assets/images/posts/image-post.png',
+    images: myFirstPost.images,
     stacks: [
       {name: 'Laravel', icon: 'laravel-color-logo'},
       {name: 'Laravel', icon: 'laravel-color-logo'},
@@ -83,6 +91,7 @@ export const posts = [
     ],
   },
   {
+    id: 5,
     title: "My fifth post",
     subtitle: "This is my fifth post",
     description: "This is my fifth post",
@@ -90,6 +99,7 @@ export const posts = [
     slug: "my-fifth-post",
     date: "2021-01-01",
     header: '/src/assets/images/posts/image-post.png',
+    images: myFirstPost.images,
     stacks: [
       {name: 'Laravel', icon: 'laravel-color-logo'},
       {name: 'Laravel', icon: 'laravel-color-logo'},
@@ -101,6 +111,7 @@ export const posts = [
     ],
   },
   {
+    id: 6,
     title: "My sixth post",
     subtitle: "This is my sixth post",
     description: "This is my sixth post",
@@ -108,6 +119,7 @@ export const posts = [
     slug: "my-sixth-post",
     date: "2021-01-01",
     header: '/src/assets/images/posts/image-post.png',
+    images: myFirstPost.images,
     stacks: [
       {name: 'Laravel', icon: 'laravel-color-logo'},
       {name: 'Laravel', icon: 'laravel-color-logo'},
@@ -119,6 +131,7 @@ export const posts = [
     ],
   },
   {
+    id: 7,
     title: "My seventh post",
     subtitle: "This is my seventh post",
     description: "This is my seventh post",
@@ -126,6 +139,7 @@ export const posts = [
     slug: "my-seventh-post",
     date: "2021-01-01",
     header: '/src/assets/images/posts/image-post.png',
+    images: myFirstPost.images,
     stacks: [
       {name: 'Laravel', icon: 'laravel-color-logo'},
       {name: 'Laravel', icon: 'laravel-color-logo'},

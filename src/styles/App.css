@@ -79,6 +79,10 @@ body {
     @apply text-base lg:text-lg font-Instrument font-normal text-dirty-white
   }
 
+  .paragraph-2 {
+    @apply text-base font-Instrument font-normal text-dirty-white
+  }
+
   /* End Headings, Paragraphs, Consolas */
 
   /* Components */
