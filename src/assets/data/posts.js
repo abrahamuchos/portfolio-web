@@ -1,5 +1,6 @@
 /**
  * @typedef {Object} Post
+ * @property {number} id - This is the unique identifier for the post and determine order of posts
  * @property {string} title
  * @property {string} subtitle
  * @property {string} description
@@ -11,6 +12,7 @@
  * @property {Array<{id: string, alt: string, src: string, [caption]: string }>} images
  */
 import myFirstPost from "./posts/myFirstPost.js";
+import suiteUPCM from "./posts/SuiteUPCM.js";
 
 
 /**
@@ -20,8 +22,20 @@ import myFirstPost from "./posts/myFirstPost.js";
 export const posts = [
   {
     id: 1,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet.  ",
-    slug: "my-first-post",
+    title: "El Latido Silencioso de un Problema: La Historia Detrás de Suite UPCM",
+    slug: "el-latido-silencioso-de-un-problema-la-historia-detras-de-suite-upcm",
+    subtitle: suiteUPCM.subtitle,
+    header: suiteUPCM.header,
+    description: suiteUPCM.description,
+    date: suiteUPCM.date,
+    stacks: suiteUPCM.stacks,
+    images: suiteUPCM.images,
+    content: suiteUPCM.content
+  },
+  {
+    id: 2,
+    title: "My second post",
+    slug: "my-second-post",
     subtitle: myFirstPost.subtitle,
     header: myFirstPost.header,
     description: myFirstPost.description,
@@ -29,26 +43,6 @@ export const posts = [
     stacks: myFirstPost.stacks,
     images: myFirstPost.images,
     content: myFirstPost.content
-  },
-  {
-    id: 2,
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet. Sed dignissim eros tincidunt nulla tincidunt laoreet.",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim eros tincidunt nulla tincidunt laoreet. Sed dignissim eros tincidunt nulla tincidunt laoreet.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ac metus sed porttitor. Sed eu maximus ligula, ac molestie augue.",
-    content: "This is my second post",
-    slug: "my-second-post",
-    date: "2021-01-01",
-    header: '/src/assets/images/posts/image-post.png',
-    images: myFirstPost.images,
-    stacks: [
-      {name: 'Laravel', icon: 'laravel-color-logo'},
-      {name: 'Laravel', icon: 'laravel-color-logo'},
-      {name: 'PostgreSQL', icon: 'react-color-logo'},
-      {name: 'Bootstrap', icon: 'bootstrap-color-logo'},
-      {name: 'SCSS', icon: 'sass-color-logo'},
-      {name: 'Trello', icon: 'trello-color-logo'},
-      {name: 'Git', icon: 'git-color-logo'},
-    ],
   },
   {
     id: 3,
