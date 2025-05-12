@@ -16,8 +16,13 @@ import slackLogo from '../assets/images/logos/slack-logo.svg'
 import jiraLogo from '../assets/images/logos/jira-logo.svg'
 import gitLogo from '../assets/images/logos/git-logo.svg'
 import gitHubLogo from '../assets/images/logos/github-logo.svg'
-
-export default function Skills() {
+/**
+ *
+ * @param {string} id - Html section attribute
+ * @returns {Element}
+ * @constructor
+ */
+export default function Skills({id}) {
 
   const skills = [
     {name: 'PHP', subtitle: null, logo: phpLogo},
@@ -40,7 +45,7 @@ export default function Skills() {
 
 
   return (
-    <section className='relative'>
+    <section id={id} className='relative'>
       <p className='mb-2.5'>Habilidades</p>
       <h2 className='heading-2 mb-10'>Mi caja de herramientas.</h2>
 

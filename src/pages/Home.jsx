@@ -18,7 +18,7 @@ export default function Home() {
         </SeparatorCommand>
       </div>
 
-      <AboutUs/>
+      <AboutUs id='about-me'/>
 
       <div className='relative my-10 lg:mb-12'>
         <SeparatorCommand>
@@ -26,7 +26,7 @@ export default function Home() {
         </SeparatorCommand>
       </div>
 
-      <Skills/>
+      <Skills id='skills'/>
 
       <div className='relative mb-10 lg:mb-12'>
         <SeparatorCommand>
@@ -50,7 +50,7 @@ export default function Home() {
         </SeparatorCommand>
       </div>
 
-      <section className='w-full mt-16 mb-20'>
+      <section id='contact' className='w-full mt-16 mb-20'>
         <ContactCard/>
       </section>
 
