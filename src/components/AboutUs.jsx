@@ -1,9 +1,15 @@
 import React from "react";
 
-export default function AboutUs() {
+/**
+ *
+ * @param {string} id - Html section attribute
+ * @returns {Element}
+ * @constructor
+ */
+export default function AboutUs({id}) {
 
   return (
-    <section>
+    <section id={id}>
       <p className='mb-2.5'>Sobre Mí</p>
       <h2 className='heading-2 mb-2.5'>Hola, soy Abraham.</h2>
       <p className="paragraph">
