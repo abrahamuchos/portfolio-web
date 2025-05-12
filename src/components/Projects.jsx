@@ -1,9 +1,12 @@
 import React from "react";
 import Card from "./Card.jsx";
 
+import { posts } from "../assets/data/posts.js";
 import projectImg from '../assets/images/posts/image-post.png'
 
 export default function Projects() {
+  const firstPost = posts[0];
+  const remainingPosts = posts.slice(1, 4);
 
   return (
     <section>
@@ -13,35 +16,26 @@ export default function Projects() {
       <div className='w-full mb-5'>
         <Card
           variant='primary'
-          title='Suite UPCM'
-          subtitle='Laravel, React, Tailwindcss'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ac metus sed porttitor.  Sed eu maximus ligula, ac molestie augue. '
-          image={projectImg}
+          title={firstPost.title}
+          subtitle={firstPost.subtitle}
+          description={firstPost.description}
+          image={firstPost.header}
+          link={`/projects/${firstPost.slug}`}
         />
       </div>
 
       <div className="grid grid-cols-1 gap-5 justify-items-center md:grid-cols-2 lg:grid-cols-3">
-        <Card
-          variant='secondary'
-          title='Suite UPCM'
-          subtitle='Laravel, React, Tailwindcss'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ac metus sed porttitor.  Sed eu maximus ligula, ac molestie augue. '
-          image={projectImg}
-        />
-        <Card
-          variant='secondary'
-          title='Suite UPCM'
-          subtitle='Laravel, React, Tailwindcss'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ac metus sed porttitor.  Sed eu maximus ligula, ac molestie augue. '
-          image={projectImg}
-        />
-        <Card
-          variant='secondary'
-          title='Suite UPCM'
-          subtitle='Laravel, React, Tailwindcss'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ac metus sed porttitor.  Sed eu maximus ligula, ac molestie augue. '
-          image={projectImg}
-        />
+        {remainingPosts.map(post => (
+          <Card
+            key={post.id}
+            variant='secondary'
+            title={post.title}
+            subtitle={post.subtitle}
+            description={post.description}
+            image={post.header}
+            link={`/projects/${post.slug}`}
+          />
+        ))}
       </div>
 
 
