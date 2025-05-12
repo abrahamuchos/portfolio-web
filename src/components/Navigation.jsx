@@ -1,10 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router";
 import hambuger from '../assets/icons/hamburger-icon.svg';
 import equis from '../assets/icons/equis-icon.svg';
 import { HashLink } from "react-router-hash-link";
 
 export default function Navigation() {
+  const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
@@ -13,6 +14,12 @@ export default function Navigation() {
     {name: 'Proyectos', path: '/projects', hash: null},
     {name: 'Contacto', path: '/', hash: '#contact'},
   ];
+
+  useEffect(() => {
+    if(location.hash === ''){
+      setIsMobileMenuOpen(false);
+    }
+  }, [location]);
 
   return (
     <nav className='mb-5'>
