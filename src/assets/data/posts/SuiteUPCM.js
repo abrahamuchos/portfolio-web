@@ -162,53 +162,49 @@ const content = "<p class='paragraph-2  mb-8'>\n" +
 
 const images = [
   {
-    id: '1',
-    alt: 'image',
+    id: 1,
+    alt:'login-image',
     src: '/src/assets/images/posts/suite-upcm/login 1 - 1.png',
-    caption: 'Esta es el home'
+    thumbnail: null,
+    width: 1200,
+    height: 600,
+    caption: 'Login'
   },
   {
-    id: '2',
-    alt: 'image',
+    id: 2,
+    alt:'cita-image',
     src: '/src/assets/images/posts/suite-upcm/Cita 1 - 2.png',
-    caption: 'Esta es el home'
+    thumbnail: null,
+    width: 1200,
+    height: 600,
+    caption: 'Cita medica'
   },
   {
-    id: '3',
-    alt: 'image',
+    id: 3,
+    alt:'login-image',
     src: '/src/assets/images/posts/suite-upcm/Home -  Citas (asistant) 1 - 3.png',
-    caption: 'Esta es el home'
+    thumbnail: null,
+    width: 1200,
+    height: 600,
+    caption: 'Cita medica'
   },
   {
-    id: '4',
-    alt: 'image',
+    id: 4,
+    alt:'Home',
     src: '/src/assets/images/posts/suite-upcm/home-screen.png',
-    caption: 'Esta es el home'
+    thumbnail: null,
+    width: 1200,
+    height: 600,
+    caption: 'Home'
   },
   {
-    id: '5',
-    alt: 'image',
+    id: 5,
+    alt:'antecedentes-image',
     src: '/src/assets/images/posts/suite-upcm/Registro medico ver antecedentes 1 - 1.png',
-    caption: 'Esta es el home'
-  },
-  {
-    id: '6',
-    alt: 'image',
-    src: '/src/assets/images/posts/suite-upcm/Mi perfil (asistant) 1 - 1.png',
-    caption: 'Esta es el home'
-  },
-  {
-    id: '7',
-    alt: 'image',
-    src: '/src/assets/images/posts/suite-upcm/Home -  Citas (asistant) 1 - 3.png',
-    caption: 'Esta es el home'
-  },
-  {
-    id: '8',
-    alt: 'image',
-    src: '/src/assets/images/posts/suite-upcm/Consulta medica Antecedentes 1 - 3.png',
-    caption: 'Esta es el home',
-    gridSrc: 'https://picsum.photos/200/300'
+    thumbnail: 'https://picsum.photos/200/300',
+    width: 1400,
+    height: 9400,
+    caption: 'Registro medico antecedentes'
   },
 ];
 

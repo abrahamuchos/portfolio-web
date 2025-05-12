@@ -5,13 +5,14 @@ import { posts } from "../assets/data/posts.js";
 import SeparatorCommand from "../components/SeparatorCommand.jsx";
 import Stack from "../components/Stack.jsx";
 import ContactCard from "../components/ContactCard.jsx";
-import { ImageGallery } from "react-image-grid-gallery";
 import ProjectControls from "../components/ProjectControls.jsx";
+import ImageGallery from "../components/ImageGallery.jsx";
 
 
 export default function ProjectDetail() {
   const {slug} = useParams();
   const post = posts.find((post) => post.slug === slug);
+  console.log('Post >>', post)
 
 
   if (!post) {
@@ -37,7 +38,7 @@ export default function ProjectDetail() {
       {/*Gallery*/}
       {post.images.length ?
         <section className='w-full mt-10'>
-          <ImageGallery imagesInfoArray={post.images}/>
+          <ImageGallery images={post.images}/>
         </section>
         : null
       }

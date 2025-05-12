@@ -63,25 +63,41 @@ const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-ima
 
 const images=[
   {
-    id: '1',
-    alt: 'image',
+    id: 1,
+    alt:'',
     src: '/src/assets/images/posts/my-first-post/test-post-image.png',
-    caption: 'Esta es el home'
-  },{
-    id: '2',
-    alt: 'image',
-    src: '/src/assets/images/posts/my-first-post/test-2.png'
-  },{
-    id: '3',
-    alt: 'image',
-    src: '/src/assets/images/posts/my-first-post/test-post-image.png',
-    caption: 'Esta es el otro home'
+    thumbnail: null,
+    width: 1600,
+    height: 1600,
+    caption: 'Imagen de prueba'
   },
   {
-    id: '4',
-    alt: 'image',
-    src: '/src/assets/images/posts/my-first-post/test-post-image.png'
+    id: 2,
+    alt: null,
+    src: '/src/assets/images/posts/my-first-post/test-2.png',
+    thumbnail: null,
+    width: 1600,
+    height: 1600,
   },
+  {
+    id: 3,
+    alt:'lorem-ipsum',
+    src: 'https://picsum.photos/350/250',
+    thumbnail: 'https://picsum.photos/200/300',
+    width: 1400,
+    height: 9400,
+    caption: 'Registro medico antecedentes'
+  },
+  {
+    id: 4,
+    alt:'lorem-ipsum',
+    src: 'https://picsum.photos/350/250',
+    thumbnail: 'https://picsum.photos/200/300',
+    width: 1400,
+    height: 9400,
+    caption: 'Registro medico antecedentes'
+  },
+
 ];
 
 export default {header, date, stacks, content, subtitle, description, images}
