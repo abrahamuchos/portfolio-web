@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@layer base {
+  @font-face {
+    font-family: "InstrumentSans";
+    src: url("../assets/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "GameOverCre";
+    src: url("../assets/fonts/gameovercre1 2.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "GeistMono";
+    src: url("../assets/fonts/GeistMono-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_opsz,wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  body {
+    @apply text-sm font-Instrument font-normal text-dirty-white bg-light-black bg-grid bg-repeat bg-[size:24px_24px]
+  }
+
+  #root {
+    @apply max-w-[1350px] mx-auto px-4 lg:px-0 bg-dark-black min-h-screen
+  }
+
+}
+
+@layer utilities {
+
+  /* Headings, Paragraphs, Consolas */
+  .heading-1 {
+    @apply text-3xl md:text-4xl lg:text-6xl font-Instrument font-medium text-light-white leading-10 lg:leading-[73px]
+  }
+
+  .heading-2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-Instrument font-medium text-light-white
+  }
+
+  .heading-3 {
+    @apply text-lg font-Instrument font-normal  text-dirty-white
+  }
+  .heading-3-light-white {
+    @apply text-lg font-Instrument font-normal  text-light-white
+  }
+
+  .heading-4 {
+    @apply text-sm font-Instrument font-normal  text-dirty-white
+  }
+
+  .heading-4-light-white {
+    @apply text-sm font-Instrument font-normal  text-light-white
+  }
+
+  .consola-1 {
+    @apply text-sm font-Geist font-normal text-commands-gray
+  }
+
+  .consola-2 {
+    @apply text-sm font-Geist font-normal text-white tracking-wide
+  }
+
+  .paragraph {
+    @apply text-base lg:text-lg font-Instrument font-normal text-dirty-white
+  }
+
+  .paragraph-2 {
+    @apply text-base font-Instrument font-normal text-dirty-white leading-6 tracking-tight
+  }
+
+  /* End Headings, Paragraphs, Consolas */
+
+  /* Components */
+  .line {
+    @apply w-screen h-[1px] bg-commands-gray
+  }
+
+  .tabs {
+    @apply text-base font-Geist font-normal text-light-white tracking-wide uppercase p-2.5 bg-very-dark-black border-2 border-dashed border-very-dark-gray  rounded
+  }
+  /* End Components */
+
+  /*Cards*/
+  .card > .card-content > .card-title {
+    @apply heading-2 mb-5
+  }
+  .card > .card-content .card-subtitle {
+    @apply heading-4-light-white mb-5
+  }
+  .card > .card-content .card-paragraph {
+    @apply paragraph mb-5
+  }
+  .card > .card-img > img {
+    @apply w-full
+  }
+
+  .card.primary{
+    @apply w-full flex flex-col-reverse  items-center pt-0 bg-very-dark-black border-2 border-very-dark-gray rounded-2xl gap-2.5
+    md:flex-row md:p-10
+  }
+  .card.primary > .card-content > .card-title {
+    @apply heading-2 mb-5 vertical-truncate-text max-h-[2.6em]
+  }
+  .card.primary > .card-content {
+    @apply flex flex-col justify-start w-full md:w-1/2 text-left px-4 py-5 md:p-0
+  }
+  .card.primary > .card-img{
+    @apply w-full md:w-1/2 flex justify-end
+  }
+  .card.primary > .card-img > img {
+    @apply rounded-tl-2xl rounded-tr-2xl md:rounded-2xl
+  }
+  .card.primary .btn-primary{
+    @apply w-fit self-end md:self-start
+  }
+
+  .card.secondary{
+    @apply w-full flex flex-col-reverse max-w-[448px] items-center pt-0 bg-very-dark-black border-2 border-very-dark-gray rounded-2xl gap-2.5
+  }
+  .card.secondary > .card-content > .card-title {
+    @apply truncate
+  }
+  .card.secondary > .card-content {
+    @apply flex flex-col justify-start w-full text-left px-4 py-5
+  }
+  .card.secondary > .card-content > .card-title {
+    @apply heading-3-light-white mb-5 truncate
+  }
+  .card.secondary > .card-content .card-subtitle {
+    @apply heading-4-light-white mb-5 truncate
+  }
+  .card.secondary > .card-content .card-paragraph {
+    @apply text-sm font-Instrument font-normal text-dirty-white mb-5 h-[3em] vertical-truncate-text
+  }
+  .card.secondary > .card-img{
+    @apply w-full flex justify-end
+  }
+  .card.secondary > .card-img > img{
+    @apply rounded-t-2xl
+  }
+  .card.secondary .btn-primary{
+    @apply w-fit self-end
+  }
+  /*End Cards*/
+
+
+  /* Buttons */
+  .btn-primary {
+    @apply text-sm md:text-base font-Geist font-normal text-white tracking-wide uppercase py-2.5 px-[15px] bg-black border-2 border-very-dark-gray  rounded hover:cursor-pointer transition-colors hover:bg-zinc-900
+  }
+  /* Buttons */
+
+  .vertical-truncate-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
