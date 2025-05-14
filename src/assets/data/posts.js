@@ -13,6 +13,8 @@
  */
 import myFirstPost from "./posts/myFirstPost.js";
 import suiteUPCM from "./posts/SuiteUPCM.js";
+import qrlStrategy from "./posts/QrlStrategy.js";
+import restaurantApi from "./posts/RestaurantTdd.js";
 
 
 /**
@@ -34,27 +36,27 @@ export const posts = [
   },
   {
     id: 2,
-    title: "My second post",
-    slug: "my-second-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
+    title: "Mi Aventura con QRL Strategy",
+    slug: "mi-aventura-con-qrl-strategy",
+    subtitle: qrlStrategy.subtitle,
+    header: qrlStrategy.header,
+    description: qrlStrategy.description,
+    date: qrlStrategy.date,
+    stacks: qrlStrategy.stacks,
+    images: qrlStrategy.images,
+    content: qrlStrategy.content
   },
   {
     id: 3,
-    title: "My third post",
-    slug: "my-third-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
+    title: "Restaurant API:  Explorando TDD en el Desarrollo Back-end",
+    slug: "restaurant-api-explorando-tdd-en-el-desarrollo-back-end",
+    subtitle: restaurantApi.subtitle,
+    header: restaurantApi.header,
+    description: restaurantApi.description,
+    date: restaurantApi.date,
+    stacks: restaurantApi.stacks,
+    images: restaurantApi.images,
+    content: restaurantApi.content
   },
   {
     id: 4,

@@ -7,6 +7,7 @@ import Stack from "../components/Stack.jsx";
 import ContactCard from "../components/ContactCard.jsx";
 import ProjectControls from "../components/ProjectControls.jsx";
 import ImageGallery from "../components/ImageGallery.jsx";
+import ArticleTest from "../components/ArticleTest.jsx";
 
 
 export default function ProjectDetail() {
@@ -37,18 +38,8 @@ export default function ProjectDetail() {
         <Stack stacks={post.stacks} className="mt-8 mb-10"/>
 
         <div dangerouslySetInnerHTML={{__html: post.content}} className='mt-12'></div>
-        {/*<div className="relative w-full overflow-hidden pb-[56.25%] lg:w-[800px] lg:h-[450px] lg:mx-auto lg:pb-0">*/}
-        {/*  <iframe*/}
-        {/*    className="absolute top-0 left-0 w-full h-full"*/}
-        {/*    src="https://www.youtube.com/embed/GQJVM0MzyK4?si=6jZNIiaJVQEfa-K7"*/}
-        {/*    title="YouTube video player"*/}
-        {/*    frameBorder="0"*/}
-        {/*    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
-        {/*    referrerPolicy="strict-origin-when-cross-origin"*/}
-        {/*    allowFullScreen*/}
-        {/*  ></iframe>*/}
-        {/*</div>*/}
-
+        {/*<ArticleTest/>*/}
+        <test/>
       </article>
 
       {/*Gallery*/
