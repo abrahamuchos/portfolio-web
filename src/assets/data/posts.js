@@ -7,7 +7,7 @@
  * @property {string} content -HTML content
  * @property {string} slug
  * @property {string} date
- * @property {string} header
+ * @property {{src: string, card: string, alt: string}} header
  * @property {Array<{name: string, icon: string}>} stacks
  * @property {Array<{id: number, alt: (string|null), src: string, thumbnail: string|null, width: number, height: number, [caption: string]}>} images
  */

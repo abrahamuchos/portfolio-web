@@ -1,6 +1,9 @@
-import React from "react";
 
-const header = '/src/assets/images/posts/image-post.png';
+const header = {
+  src: '/src/assets/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
+  card: '/src/assets/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
+  alt: 'Suite UPCM'
+};
 
 const date = "2023 - 2024";
 
@@ -18,7 +21,7 @@ const stacks = [
   {name: 'Git', icon: 'git-color-logo.png'},
 ];
 
-const content = "<img src='/src/assets/images/posts/image-post.png' alt='image-header' class='rounded-lg mb-8'/>\n" +
+const content = "<img src='/src/assets/images/posts/suite-upcm/header/home-screen-with-bg-card-compress.webp' alt='suite-home-header' class='rounded-lg mb-8'/>\n" +
   "        <p class='paragraph-2 mb-8'>\n" +
   "          Imagina el recorrido de un paciente con enfermedades cardiometabólicas como un pasillo blanco e infinito\n" +
   "          —similar a los de la serie Severance—. Un espacio aséptico donde cada puerta o sección podría representar un\n" +
@@ -185,14 +188,17 @@ const content = "<img src='/src/assets/images/posts/image-post.png' alt='image-h
   "          diseño y mi perspectiva técnica, nos permitió alcanzar una solución que equilibraba la funcionalidad con la\n" +
   "          usabilidad.\n" +
   "        </p>\n" +
-  "\n" +
-  "        <div class='flex flex-col items-center mb-8'>\n" +
-  "          <iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/GQJVM0MzyK4?si=6jZNIiaJVQEfa-K7\"\n" +
-  "                  title=\"YouTube video player\" frameBorder=\"0\"\n" +
-  "                  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n" +
-  "                  referrerPolicy=\"strict-origin-when-cross-origin\" allowFullScreen></iframe>\n" +
+  "         <div class=\"relative w-full overflow-hidden pb-[56.25%] lg:w-[800px] lg:h-[450px] lg:mx-auto lg:pb-0\">\n" +
+  "          <iframe\n" +
+  "            class=\"absolute top-0 left-0 w-full h-full\"\n" +
+  "            src=\"https://www.youtube.com/embed/GQJVM0MzyK4?si=6jZNIiaJVQEfa-K7\"\n" +
+  "            title=\"YouTube video player\"\n" +
+  "            frameBorder=\"0\"\n" +
+  "            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n" +
+  "            referrerPolicy=\"strict-origin-when-cross-origin\"\n" +
+  "            allowFullScreen\n" +
+  "          ></iframe>\n" +
   "        </div>\n" +
-  "\n" +
   "        <p class='paragraph  my-10 lg:my-16'>\n" +
   "          Suite UPCM no es solo un software; es un aliado estratégico para el cardiólogo, una herramienta que libera\n" +
   "          tiempo y\n" +
@@ -349,8 +355,8 @@ const images = [
     src: '/src/assets/images/posts/suite-upcm/gallery/Mi perfil (doctor) 1 - 1.png',
     thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Mi perfil (doctor) 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
-    height: 2345,
-    caption: 'Configuracion de usuario - Mi perfil '
+    height: 1727,
+    caption: 'Configuración de usuario - Mi perfil '
   },
 
 

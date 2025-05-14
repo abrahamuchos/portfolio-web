@@ -24,7 +24,7 @@ export default function Projects() {
             title={firstPost.title}
             subtitle={firstPost.subtitle}
             description={firstPost.description}
-            image={firstPost.header}
+            image={firstPost.header.card}
             link={`/projects/${firstPost.slug}`}
           />
         </div>
@@ -36,7 +36,7 @@ export default function Projects() {
               title={post.title}
               subtitle={post.subtitle}
               description={post.description}
-              image={post.header}
+              image={post.header.card}
               link={`/projects/${post.slug}`}
             />
           ))}
