@@ -64,63 +64,6 @@ export default function ArticleTest() {
         de la implementación.
       </p>
 
-      <h3 className='heading-3 mb-2'>Construyendo el Camino (Mis Contribuciones Clave)</h3>
-      <ol className='pl-8 mb-8'>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Entendiendo la Visión: </strong> Inicié el proyecto entendiendo la
-          esencia de QRL Strategy a través de
-          entrevistas con el cliente. Mi objetivo principal era comprender a fondo sus necesidades, sus preferencias
-          estéticas y la visión que tenían para su marca.
-        </li>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Puente entre el Cliente y el Diseño: </strong> Con una comprensión
-          clara de las expectativas del
-          cliente, mi siguiente paso fue actuar como un puente entre su visión y el equipo de diseño. Me reuní con los
-          diseñadores web para transmitirles detalladamente las ideas, los gustos y los requisitos del cliente.
-        </li>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Inspiración y Dirección Creativa: </strong>Para asegurar que el
-          diseño final estuviera alineado con la
-          visión de QRL Strategy, investigué y presenté referencias visuales que sirvieran de guía e inspiración para
-          los diseñadores, obteniendo así un feedback enriquecedor entre el equipo de diseño y el cliente.
-        </li>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Análisis de Requisitos y Soluciones Técnicas: </strong> Paralelamente
-          al proceso de diseño, me enfoqué
-          en analizar los requisitos funcionales del sitio web y diseñar las soluciones técnicas necesarias para
-          garantizar un rendimiento óptimo y una experiencia de usuario fluida.
-        </li>
-      </ol>
-
-      <h3 className='heading-3 mb-2'>Atención al Detalle (Enfoque en el Desarrollo):</h3>
-      <ol className='pl-8 mb-8'>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Selección Tecnológica Estratégica: </strong>Desde la fase inicial, la
-          elección de las tecnologías fue
-          una prioridad. Opté por React como la base para la interfaz de usuario debido a su arquitectura basada en
-          componentes, su excelente rendimiento y su capacidad para escalar en un futuro. Complementariamente, React
-          Router se convirtió en la solución ideal para gestionar la navegación dentro de la aplicación de una manera
-          eficiente y declarativa, crucial para una experiencia de usuario fluida.
-        </li>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Código Impecable: </strong> Una vez que el diseño estuvo definido, mi
-          atención se centró en la implementación. Revisé meticulosamente cada línea de código para garantizar su
-          calidad, eficiencia y la ausencia de errores.
-        </li>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Experiencia Consistente: </strong> Aseguré que el sitio web se viera
-          y funcionará de manera impecable tanto en mobile, tablet y desktop.
-        </li>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Toques de Magia: </strong>Implementé micro interacciones y
-          animaciones sutiles para enriquecer la experiencia del usuario y hacerla más memorable.
-        </li>
-        <li className='paragraph-2 mb-2 list-disc'>
-          <strong className='font-bold text-white'>Garantizando la Funcionalidad: </strong>Realicé pruebas exhaustivas
-          para verificar que cada elemento del sitio web funcionará a la perfección.
-        </li>
-      </ol>
-
       <h3 className="heading-3">Recursos</h3>
       <div className='flex justify-center items-center gap-10'>
         <a className="tabs" href="https://qrl-web.onrender.com/">
@@ -132,13 +75,6 @@ export default function ArticleTest() {
         </a>
       </div>
 
-
-      <p className='paragraph  my-10 lg:my-16'>
-        El resultado fue un sitio web moderno, intuitivo y visualmente atractivo que sienta las bases para el exitoso
-        lanzamiento de QRL Strategy en 2025. Esta plataforma digital no solo cumple con los objetivos iniciales de
-        atraer nuevos clientes y posicionar la marca, sino que también facilita la comunicación y genera la confianza
-        que una consultora de su calibre merece.
-      </p>
     </>
   );
 }

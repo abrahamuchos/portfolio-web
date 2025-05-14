@@ -37,8 +37,8 @@ export default function ProjectDetail() {
 
         <Stack stacks={post.stacks} className="mt-8 mb-10"/>
 
-        {/*<div dangerouslySetInnerHTML={{__html: post.content}} className='mt-12'></div>*/}
-        <ArticleTest/>
+        <div dangerouslySetInnerHTML={{__html: post.content}} className='mt-12'></div>
+        {/*<ArticleTest/>*/}
         <test/>
       </article>
 
