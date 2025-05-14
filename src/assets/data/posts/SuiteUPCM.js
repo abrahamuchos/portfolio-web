@@ -1,7 +1,7 @@
 
 const header = {
-  src: '/src/assets/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
-  card: '/src/assets/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
+  src: '/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
+  card: '/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
   alt: 'Suite UPCM'
 };
 
@@ -21,7 +21,7 @@ const stacks = [
   {name: 'Git', icon: 'git-color-logo.png'},
 ];
 
-const content = "<img src='/src/assets/images/posts/suite-upcm/header/home-screen-with-bg-card-compress.webp' alt='suite-home-header' class='rounded-lg mb-8'/>\n" +
+const content = "<img src='/images/posts/suite-upcm/header/home-screen-with-bg-card-compress.webp' alt='suite-home-header' class='rounded-lg mb-8'/>\n" +
   "        <p class='paragraph-2 mb-8'>\n" +
   "          Imagina el recorrido de un paciente con enfermedades cardiometabólicas como un pasillo blanco e infinito\n" +
   "          —similar a los de la serie Severance—. Un espacio aséptico donde cada puerta o sección podría representar un\n" +
@@ -88,7 +88,7 @@ const content = "<img src='/src/assets/images/posts/suite-upcm/header/home-scree
   "        </p>\n" +
   "\n" +
   "        <div class='flex flex-col items-center mb-8'>\n" +
-  "          <img src='/src/assets/images/posts/suite-upcm/content/pacientes - home - consulta medica activa - doctor.png'\n" +
+  "          <img src='/images/posts/suite-upcm/content/pacientes - home - consulta medica activa - doctor.png'\n" +
   "               alt='pacientes-home' class='rounded-lg'/>\n" +
   "          <small>Modulo de Pacientes para el rol Doctor(MD), con una consulta activa.</small>\n" +
   "        </div>\n" +
@@ -160,7 +160,7 @@ const content = "<img src='/src/assets/images/posts/suite-upcm/header/home-scree
   "\n" +
   "        <div class='flex flex-col items-center mb-8'>\n" +
   "          <img\n" +
-  "            src='/src/assets/images/posts/suite-upcm/content/consulta medica - antecedentes - formulario validacion.png'\n" +
+  "            src='/images/posts/suite-upcm/content/consulta medica - antecedentes - formulario validacion.png'\n" +
   "            alt='pacientes-home' class='rounded-lg'/>\n" +
   "          <small>Consulta medica en el modulo Antecedentes en la sección Antecedentes de enfermedades cardiovasculares,\n" +
   "            el formulario de validación de datos.</small>\n" +
@@ -217,8 +217,8 @@ const images = [
   {
     id: 1,
     alt: 'login-image',
-    src: '/src/assets/images/posts/suite-upcm/gallery/login-screen.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/login-screen_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/login-screen.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/login-screen_thumbnail_1024x640.jpg',
     width: 1440,
     height: 811,
     caption: 'Inicio de sesión'
@@ -226,8 +226,8 @@ const images = [
   {
     id: 2,
     alt: 'cita-crear',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Citas horario laboral (doctor) 2 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Citas horario laboral (doctor) 2 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Citas horario laboral (doctor) 2 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Citas horario laboral (doctor) 2 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 835,
     caption: 'Agenda de citas medica para el rol Doctor(Md)'
@@ -235,8 +235,8 @@ const images = [
   {
     id: 3,
     alt: 'cita-crear',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Cita crear (doctor) 1 - 6.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Cita crear (doctor) 1 - 6_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Cita crear (doctor) 1 - 6.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Cita crear (doctor) 1 - 6_thumbnail_1024x640.jpg',
     width: 1440,
     height: 835,
     caption: 'Crear una nueva cita medica'
@@ -244,8 +244,8 @@ const images = [
   {
     id: 4,
     alt: 'citas-unidad-medica',
-    src: '/src/assets/images/posts/suite-upcm/gallery/home - Citas (medical unit) 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/home - Citas (medical unit) 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/home - Citas (medical unit) 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/home - Citas (medical unit) 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 960,
     caption: 'Lista de citas medicas para el rol Unidad Medica(UM).'
@@ -253,8 +253,8 @@ const images = [
   {
     id: 5,
     alt: 'perfil-paciente',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Paciente perfil paciente 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Paciente perfil paciente 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Paciente perfil paciente 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Paciente perfil paciente 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 1872,
     caption: 'Perfil del paciente. Se puede visualizar sus diagnostico, tratamientos, citas, etc.'
@@ -262,8 +262,8 @@ const images = [
   {
     id: 6,
     alt: 'consulta-medica-1',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Consulta medica Home 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Consulta medica Home 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Consulta medica Home 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Consulta medica Home 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 1735,
     caption: 'Consulta medica - Home (Página 1). Lista todas las categorias para realizar una consulta medica.'
@@ -271,8 +271,8 @@ const images = [
   {
     id: 7,
     alt: 'consulta-medica-2',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Consulta medica Home 1 - 2.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Consulta medica Home 1 - 2_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Consulta medica Home 1 - 2.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Consulta medica Home 1 - 2_thumbnail_1024x640.jpg',
     width: 1440,
     height: 1049,
     caption: 'Consulta medica - Home (Página 2). Lista todas las categorias para realizar una consulta medica.'
@@ -280,8 +280,8 @@ const images = [
   {
     id: 8,
     alt: 'consulta-medica-antecedentes',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Consulta medica Antecedentes 1 - 3.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Consulta medica Antecedentes 1 - 3_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Consulta medica Antecedentes 1 - 3.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Consulta medica Antecedentes 1 - 3_thumbnail_1024x640.jpg',
     width: 811,
     height: 4096,
     caption: 'Consulta medica - Antecedentes. Formulario para registrar antecedentes medicos.'
@@ -289,8 +289,8 @@ const images = [
   {
     id: 9,
     alt: 'consulta-medica-diagnosticos',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Consulta medica Diagnostico 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Consulta medica Diagnostico 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Consulta medica Diagnostico 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Consulta medica Diagnostico 1 - 1_thumbnail_1024x640.jpg',
     width: 1261,
     height: 4096,
     caption: 'Consulta medica - Diagnósticos. Formulario para registrar los diagnósticos del paciente.'
@@ -298,8 +298,8 @@ const images = [
   {
     id: 10,
     alt: 'consulta-medica-tratamientos',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Consulta medica Tratamientos 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Consulta medica Tratamientos 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Consulta medica Tratamientos 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Consulta medica Tratamientos 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 2412,
     caption: 'Consulta medica - Tratamientos. Formulario para registrar los tratamientos del paciente. El sistema cuenta con los tratamientos cargados junto con sus dosis diarias (min - max) asi como como su frecuencia'
@@ -307,8 +307,8 @@ const images = [
   {
     id: 11,
     alt: 'formulas-algoritmos',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Formulas y algoritmos home 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Formulas y algoritmos home 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Formulas y algoritmos home 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Formulas y algoritmos home 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 1202,
     caption: 'Formulas y Algoritmos - Home . Lista todos las formulas y algoritmos diponibles en el sistema.'
@@ -316,8 +316,8 @@ const images = [
   {
     id: 12,
     alt: 'formulas-chad-vasc',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Formulas y algoritmos - chad score 1 - 2.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Formulas y algoritmos - chad score 1 - 2_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Formulas y algoritmos - chad score 1 - 2.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Formulas y algoritmos - chad score 1 - 2_thumbnail_1024x640.jpg',
     width: 1440,
     height: 1092,
     caption: 'Formulas y Algoritmos - Chad Score. Formulario para calcular el Chad Score del paciente.'
@@ -325,8 +325,8 @@ const images = [
   {
     id: 13,
     alt: 'estadísticas',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Estadisticas home (medical unit) 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Estadisticas home (medical unit) 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Estadisticas home (medical unit) 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Estadisticas home (medical unit) 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 957,
     caption: 'Estadísticas - Home. Lista todos las estadísticas disponibles en el sistema.'
@@ -334,8 +334,8 @@ const images = [
   {
     id: 14,
     alt: 'estadísticas-hta',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Estadisticas hta (medical unit) 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Estadisticas hta (medical unit) 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Estadisticas hta (medical unit) 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Estadisticas hta (medical unit) 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 2455,
     caption: 'Estadísticas - HTA. Estadísticas y graficas de los pacientes con HTA. Filtros para edad, sexo, etc.'
@@ -343,8 +343,8 @@ const images = [
   {
     id: 15,
     alt: 'estadísticas-pacientes',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Estatisticas mis pacientes (doctor) 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Estatisticas mis pacientes (doctor) 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Estatisticas mis pacientes (doctor) 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Estatisticas mis pacientes (doctor) 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 2345,
     caption: 'Estadísticas - Pacientes. Estadísticas y graficas del total de pacientes. Filtros para edad, sexo, etc.'
@@ -352,8 +352,8 @@ const images = [
   {
     id: 16,
     alt: 'usuario-perfil',
-    src: '/src/assets/images/posts/suite-upcm/gallery/Mi perfil (doctor) 1 - 1.png',
-    thumbnail: '/src/assets/images/posts/suite-upcm/thumbnail/Mi perfil (doctor) 1 - 1_thumbnail_1024x640.jpg',
+    src: '/images/posts/suite-upcm/gallery/Mi perfil (doctor) 1 - 1.png',
+    thumbnail: '/images/posts/suite-upcm/thumbnail/Mi perfil (doctor) 1 - 1_thumbnail_1024x640.jpg',
     width: 1440,
     height: 1727,
     caption: 'Configuración de usuario - Mi perfil '

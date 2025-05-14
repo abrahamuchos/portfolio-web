@@ -15,7 +15,7 @@ export default function Stack({stacks, className}) {
       >
         {stacks.map((stack, index) => (
           <li key={index} className='flex items-center gap-2 consola-1'>
-            <img src={`/src/assets/images/logos/${stack.icon}`} alt={stack.name} className='w-4 h-4' />
+            <img src={`/images/logos/${stack.icon}`} alt={stack.name} className='w-4 h-4' />
             {stack.name}
           </li>
         ))}
