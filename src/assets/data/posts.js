@@ -13,6 +13,7 @@
  */
 import myFirstPost from "./posts/myFirstPost.js";
 import suiteUPCM from "./posts/SuiteUPCM.js";
+import qrlStrategy from "./posts/QrlStrategy.js";
 
 
 /**
@@ -34,15 +35,15 @@ export const posts = [
   },
   {
     id: 2,
-    title: "My second post",
-    slug: "my-second-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
+    title: "Mi Aventura con QRL Strategy",
+    slug: "mi-aventura-con-qrl-strategy",
+    subtitle: qrlStrategy.subtitle,
+    header: qrlStrategy.header,
+    description: qrlStrategy.description,
+    date: qrlStrategy.date,
+    stacks: qrlStrategy.stacks,
+    images: qrlStrategy.images,
+    content: qrlStrategy.content
   },
   {
     id: 3,
