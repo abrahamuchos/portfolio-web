@@ -31,8 +31,15 @@ export default function ProjectDetail() {
       <article>
         <h1 className='heading-2 mb-8'>{post.title}</h1>
         <h2 className="heading-3">{post.description}</h2>
-        <Stack stacks={post.stacks} className="mt-8"/>
+        <Stack stacks={post.stacks} className="mt-8 mb-10"/>
         <div dangerouslySetInnerHTML={{__html: post.content}} className='mt-12'></div>
+
+        {/*  Test*/}
+
+
+        {/*  End Test*/}
+
+
       </article>
 
       {/*Gallery*/}
