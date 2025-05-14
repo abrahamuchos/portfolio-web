@@ -1,4 +1,8 @@
-const header =  '/src/assets/images/posts/image-post.png';
+const header = {
+  src: '/src/assets/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
+  card: '/src/assets/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
+  alt: 'Suite UPCM'
+};
 
 const date = "2021-01-01";
 
