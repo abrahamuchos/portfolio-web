@@ -1,6 +1,6 @@
 const header = {
-  src: '/src/assets/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
-  card: '/src/assets/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
+  src: '/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
+  card: '/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
   alt: 'Suite UPCM'
 };
 
@@ -20,7 +20,7 @@ const stacks= [
   {name: 'Git', icon: 'git-color-logo.png'},
 ];
 
-const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full mb-8'>\n" +
+const content = "<img src=\"/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full mb-8'>\n" +
   "<h2 class='heading-3 mb-2'>Nam efficitur cursus dolor feugiat congue. </h2>\n" +
   "<p class='paragraph-2  mb-8'>\n" +
   "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur cursus dolor feugiat congue. Suspendisse\n" +
@@ -32,7 +32,7 @@ const content = "<img src=\"/src/assets/images/posts/my-first-post/test-post-ima
   "  scelerisque, sem tortor sagittis odio, malesuada convallis nulla massa eu erat. Curabitur non erat nec risus\n" +
   "  condimentum ultrices sed vel erat. Praesent mattis erat quam, a finibus eros fermentum molestie.\n" +
   "</p>\n" +
-  "<img src=\"/src/assets/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full mb-8'>\n" +
+  "<img src=\"/images/posts/my-first-post/test-post-image.png\" alt=\"header-image\" class='w-full mb-8'>\n" +
   "<p class='paragraph-2 mb-4'>\n" +
   "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non metus metus. Etiam in venenatis nibh. Nulla ac\n" +
   "  sodales nibh, ac convallis mi. Integer at congue turpis. Vivamus rhoncus ultricies volutpat. Interdum et malesuada\n" +
@@ -69,7 +69,7 @@ const images=[
   {
     id: 1,
     alt:'',
-    src: '/src/assets/images/posts/my-first-post/test-post-image.png',
+    src: '/images/posts/my-first-post/test-post-image.png',
     thumbnail: null,
     width: 1600,
     height: 1600,
@@ -78,7 +78,7 @@ const images=[
   {
     id: 2,
     alt: null,
-    src: '/src/assets/images/posts/my-first-post/test-2.png',
+    src: '/images/posts/my-first-post/test-2.png',
     thumbnail: null,
     width: 1600,
     height: 1600,
