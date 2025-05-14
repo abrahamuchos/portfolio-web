@@ -1,6 +1,6 @@
 const header = {
-  src: '/src/assets/images/posts/restaurant-tdd/header/header-code-bg-compress.jpeg',
-  card: '/src/assets/images/posts/restaurant-tdd/header/header-code-bg_thumbnail_900x500.jpg',
+  src: '/images/posts/restaurant-tdd/header/header-code-bg-compress.jpeg',
+  card: '/images/posts/restaurant-tdd/header/header-code-bg_thumbnail_900x500.jpg',
   alt: 'Restaurant API TDD'
 };
 
@@ -17,7 +17,7 @@ const stacks = [
   {name: 'Git', icon: 'git-color-logo.png'},
 ];
 
-const content = '<img src="/src/assets/images/posts/restaurant-tdd/header/header-code-bg-compress.jpeg" alt="code-header"\n' +
+const content = '<img src="/images/posts/restaurant-tdd/header/header-code-bg-compress.jpeg" alt="code-header"\n' +
   '           class=\'rounded-lg mb-8\'/>\n' +
   '\n' +
   '\n' +
@@ -64,7 +64,7 @@ const content = '<img src="/src/assets/images/posts/restaurant-tdd/header/header
   '        mejora continua como profesional.\n' +
   '      </p>\n' +
   '\n' +
-  '      <img src="/src/assets/images/posts/restaurant-tdd/content/code-compress.png" alt="code-phpstorm"\n' +
+  '      <img src="/images/posts/restaurant-tdd/content/code-compress.png" alt="code-phpstorm"\n' +
   '           class=\'rounded-lg mb-8\'/>\n' +
   '\n' +
   '      <h2 class=\'heading-2 mb-2\'>¿Por qué incluirlo en mi portafolio?</h2>\n' +
