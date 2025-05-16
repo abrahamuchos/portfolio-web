@@ -103,10 +103,10 @@ const images = [
     id: 2,
     alt: 'home-mobile',
     src: '/images/posts/qrl-strategy/gallery/home - mobile.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/home - mobile_thumbnail_1024x640.jpg',
+    thumbnail: '/images/posts/qrl-strategy/thumbnail/Shot_thumbnail_1024x640.jpg',
     width: 425,
     height: 6332,
-    caption: 'Home Mobile - La web es responsive'
+    caption: 'Home Mobile - El sitio web de QRL Strategy es responsive'
   },
   {
     id: 3,
@@ -157,7 +157,7 @@ const images = [
     id: 8,
     alt: 'contactanos-mobile',
     src: '/images/posts/qrl-strategy/gallery/contactanos - mobile.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/contactanos - mobile_thumbnail_1024x640.jpg',
+    thumbnail: '/images/posts/qrl-strategy/thumbnail/Shot2_thumbnail_1024x640.jpg',
     width: 425,
     height: 2140,
     caption: 'Formulario de contacto, también en versión mobile. Toda la web es responsive'
