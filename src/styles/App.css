@@ -87,6 +87,18 @@ body {
     @apply text-base font-Instrument font-normal text-dirty-white leading-6 tracking-tight
   }
 
+  .post-paragraph {
+    @apply text-[19px] font-Instrument font-bold text-dirty-white leading-[28px] tracking-[0.231px]
+  }
+
+  .post-paragraph-2 {
+    @apply text-sm font-Instrument font-bold text-dirty-white leading-[22px] tracking-[0.231px]
+  }
+
+  .highlight{
+    @apply text-white;
+  }
+
   /* End Headings, Paragraphs, Consolas */
 
   /* Components */
@@ -160,6 +172,10 @@ body {
   .card.secondary .btn-primary{
     @apply w-fit self-end
   }
+
+  .card.tertiary{
+    @apply w-full bg-very-dark-black rounded-2xl
+  }
   /*End Cards*/
 
 
@@ -167,7 +183,27 @@ body {
   .btn-primary {
     @apply text-sm md:text-base font-Geist font-normal text-white tracking-wide uppercase py-2.5 px-[15px] bg-black border-2 border-very-dark-gray  rounded hover:cursor-pointer transition-colors hover:bg-zinc-900
   }
-  /* Buttons */
+  /* End Buttons */
+
+  /* Contents Paragraphs */
+  .content-center{
+    @apply w-full flex justify-center
+  }
+  .content-left{
+    @apply w-full flex justify-start ml-40
+  }
+  .content-light-left{
+    @apply flex justify-start ml-24
+  }
+  .content-small{
+    @apply w-[550px]
+  }
+
+  .content-medium{
+    @apply w-[650px]
+  }
+
+  /* End Contents Paragraphs */
 
   .vertical-truncate-text{
     display: -webkit-box;

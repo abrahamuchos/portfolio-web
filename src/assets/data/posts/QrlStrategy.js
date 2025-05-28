@@ -89,81 +89,81 @@ const content = '<img src="/images/posts/qrl-strategy/header/home-bg-compress.we
   '        </a>\n' +
   '      </div>';
 
-const images = [
-  {
-    id: 1,
-    alt: 'home-page',
-    src: '/images/posts/qrl-strategy/gallery/home - desktop.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/home - desktop_thumbnail_1024x640.jpg',
-    width: 1440,
-    height: 5312,
-    caption: 'Home - QRL Strategy'
-  },
-  {
-    id: 2,
-    alt: 'home-mobile',
-    src: '/images/posts/qrl-strategy/gallery/home - mobile.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/Shot_thumbnail_1024x640.jpg',
-    width: 425,
-    height: 6332,
-    caption: 'Home Mobile - El sitio web de QRL Strategy es responsive'
-  },
-  {
-    id: 3,
-    alt: 'menu-dropdown',
-    src: '/images/posts/qrl-strategy/gallery/home - menu - desktop.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/home - menu - desktop_thumbnail_1024x640.jpg',
-    width: 1424,
-    height: 809,
-    caption: 'Menu con todas las vistas para los servicios de QRL Strategy'
-  },
-  {
-    id: 4,
-    alt: 'estrategia-sindical-image',
-    src: '/images/posts/qrl-strategy/gallery/estrategia sindical - desktop.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/estrategia sindical - desktop_thumbnail_1024x640.jpg',
-    width: 1440,
-    height: 7583,
-    caption: 'Estrategia sindical, uno de los servicios de QRL Strategy'
-  },
-  {
-    id: 5,
-    alt: 'roadmap-servicios',
-    src: '/images/posts/qrl-strategy/gallery/roadmap - desktop.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/roadmap - desktop_thumbnail_1024x640.jpg',
-    width: 1440,
-    height: 4876,
-    caption: 'Roadmap, uno de los servicios de QRL Strategy para potenciar a sus clientes'
-  },
-  {
-    id: 6,
-    alt: 'quienes-somos',
-    src: '/images/posts/qrl-strategy/gallery/quienes - desktop.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/quienes - desktop_thumbnail_1024x640.jpg',
-    width: 1440,
-    height: 4325,
-    caption: 'Quienes somos, vista para conocer la vision y misión de QRL Strategy'
-  },
-  {
-    id: 7,
-    alt: 'contactanos',
-    src: '/images/posts/qrl-strategy/gallery/contactanos - desktop.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/contactanos - desktop_thumbnail_1024x640.jpg',
-    width: 1440,
-    height: 1691,
-    caption: 'Formulario de contacto para atraer nuevos clientes para QRL Strategy'
-  },
-  {
-    id: 8,
-    alt: 'contactanos-mobile',
-    src: '/images/posts/qrl-strategy/gallery/contactanos - mobile.png',
-    thumbnail: '/images/posts/qrl-strategy/thumbnail/Shot2_thumbnail_1024x640.jpg',
-    width: 425,
-    height: 2140,
-    caption: 'Formulario de contacto, también en versión mobile. Toda la web es responsive'
-  },
+// const images = [
+//   {
+//     id: 1,
+//     alt: 'home-page',
+//     src: '/images/posts/qrl-strategy/gallery/home - desktop.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/home - desktop_thumbnail_1024x640.jpg',
+//     width: 1440,
+//     height: 5312,
+//     caption: 'Home - QRL Strategy'
+//   },
+//   {
+//     id: 2,
+//     alt: 'home-mobile',
+//     src: '/images/posts/qrl-strategy/gallery/home - mobile.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/Shot_thumbnail_1024x640.jpg',
+//     width: 425,
+//     height: 6332,
+//     caption: 'Home Mobile - El sitio web de QRL Strategy es responsive'
+//   },
+//   {
+//     id: 3,
+//     alt: 'menu-dropdown',
+//     src: '/images/posts/qrl-strategy/gallery/home - menu - desktop.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/home - menu - desktop_thumbnail_1024x640.jpg',
+//     width: 1424,
+//     height: 809,
+//     caption: 'Menu con todas las vistas para los servicios de QRL Strategy'
+//   },
+//   {
+//     id: 4,
+//     alt: 'estrategia-sindical-image',
+//     src: '/images/posts/qrl-strategy/gallery/estrategia sindical - desktop.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/estrategia sindical - desktop_thumbnail_1024x640.jpg',
+//     width: 1440,
+//     height: 7583,
+//     caption: 'Estrategia sindical, uno de los servicios de QRL Strategy'
+//   },
+//   {
+//     id: 5,
+//     alt: 'roadmap-servicios',
+//     src: '/images/posts/qrl-strategy/gallery/roadmap - desktop.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/roadmap - desktop_thumbnail_1024x640.jpg',
+//     width: 1440,
+//     height: 4876,
+//     caption: 'Roadmap, uno de los servicios de QRL Strategy para potenciar a sus clientes'
+//   },
+//   {
+//     id: 6,
+//     alt: 'quienes-somos',
+//     src: '/images/posts/qrl-strategy/gallery/quienes - desktop.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/quienes - desktop_thumbnail_1024x640.jpg',
+//     width: 1440,
+//     height: 4325,
+//     caption: 'Quienes somos, vista para conocer la vision y misión de QRL Strategy'
+//   },
+//   {
+//     id: 7,
+//     alt: 'contactanos',
+//     src: '/images/posts/qrl-strategy/gallery/contactanos - desktop.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/contactanos - desktop_thumbnail_1024x640.jpg',
+//     width: 1440,
+//     height: 1691,
+//     caption: 'Formulario de contacto para atraer nuevos clientes para QRL Strategy'
+//   },
+//   {
+//     id: 8,
+//     alt: 'contactanos-mobile',
+//     src: '/images/posts/qrl-strategy/gallery/contactanos - mobile.png',
+//     thumbnail: '/images/posts/qrl-strategy/thumbnail/Shot2_thumbnail_1024x640.jpg',
+//     width: 425,
+//     height: 2140,
+//     caption: 'Formulario de contacto, también en versión mobile. Toda la web es responsive'
+//   },
+//
+// ];
 
-];
 
-
-export default {header, date, stacks, content, subtitle, description, images}
+export default {header, date, stacks, content, subtitle, description}

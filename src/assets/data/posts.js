@@ -13,7 +13,6 @@
  */
 import myFirstPost from "./posts/myFirstPost.js";
 import suiteUPCM from "./posts/SuiteUPCM.js";
-import qrlStrategy from "./posts/QrlStrategy.js";
 import restaurantApi from "./posts/RestaurantTdd.js";
 
 
@@ -24,6 +23,7 @@ import restaurantApi from "./posts/RestaurantTdd.js";
 export const posts = [
   {
     id: 1,
+    order: 2,
     title: "El Latido Silencioso de un Problema: La Historia Detrás de Suite UPCM",
     slug: "el-latido-silencioso-de-un-problema-la-historia-detras-de-suite-upcm",
     subtitle: suiteUPCM.subtitle,
@@ -36,18 +36,20 @@ export const posts = [
   },
   {
     id: 2,
+    order: 2,
     title: "Mi Aventura con QRL Strategy",
     slug: "mi-aventura-con-qrl-strategy",
-    subtitle: qrlStrategy.subtitle,
-    header: qrlStrategy.header,
-    description: qrlStrategy.description,
-    date: qrlStrategy.date,
-    stacks: qrlStrategy.stacks,
-    images: qrlStrategy.images,
-    content: qrlStrategy.content
+    subtitle: 'React, ViteJs, React Router y Tailwind CSS',
+    header: {
+      src: '/images/posts/qrl-strategy/header/home-bg-compress.webp',
+      card: '/images/posts/qrl-strategy/header/home-bg_thumbnail_900x500.jpg',
+      alt: 'QRL Strategy Web Site'
+    },
+    description: 'Crear la nueva presencia digital para startup QRL Strategy',
   },
   {
     id: 3,
+    order: 3,
     title: "Restaurant API:  Explorando TDD en el Desarrollo Back-end",
     slug: "restaurant-api-explorando-tdd-en-el-desarrollo-back-end",
     subtitle: restaurantApi.subtitle,
@@ -60,6 +62,7 @@ export const posts = [
   },
   {
     id: 4,
+    order: 4,
     title: "My fourth post",
     slug: "my-fourth-post",
     subtitle: myFirstPost.subtitle,
@@ -72,6 +75,7 @@ export const posts = [
   },
   {
     id: 5,
+    order: 5,
     title: "My fifth post",
     slug: "my-fifth-post",
     subtitle: myFirstPost.subtitle,
@@ -84,6 +88,7 @@ export const posts = [
   },
   {
     id: 6,
+    order: 6,
     title: "My sixth post",
     slug: "my-sixth-post",
     subtitle: myFirstPost.subtitle,
@@ -96,6 +101,7 @@ export const posts = [
   },
   {
     id: 7,
+    order: 7,
     title: "My seventh post",
     slug: "my-seventh-post",
     subtitle: myFirstPost.subtitle,
@@ -108,6 +114,7 @@ export const posts = [
   },
   {
     id: 8,
+    order: 8,
     title: "My eighth post",
     slug: "my-eighth-post",
     subtitle: myFirstPost.subtitle,
@@ -120,6 +127,7 @@ export const posts = [
   },
   {
     id: 9,
+    order: 9,
     title: "My ninth post",
     slug: "my-ninth-post",
     subtitle: myFirstPost.subtitle,
