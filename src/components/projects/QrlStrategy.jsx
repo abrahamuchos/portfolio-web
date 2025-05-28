@@ -149,11 +149,11 @@ export default function QrlStrategy() {
       </section>
 
       {/* Macbook screen Animation*/}
-      <section id='flag' className=' absolute w-full h-[850px] left-0 right-0 overflow-hidden'>
+      <section id='flag' className=' absolute w-full h-[410px]  left-0 right-0 overflow-hidden md:h-[600px] lg:h-[850px]'>
         <motion.img
           src={imgSafariScreen1}
           alt="macbook-safari-screen-1"
-          className='w-[320px] absolute top-[27%] left-1/2 -translate-x-full translate-y-full z-10'
+          className='w-[177px] md:w-[220px] lg:w-[320px] absolute top-[27%] left-1/2 -translate-x-full translate-y-full z-10'
           initial='initial'
           variants={{
             initial: {transform: "translate(-100%, 100%)"},
@@ -165,7 +165,7 @@ export default function QrlStrategy() {
         <motion.img
           src={imgSafariScreen2}
           alt="macbook-safari-screen"
-          className='w-[450px] absolute top-0 left-1/2 -translate-x-full translate-y-3/4 z-10'
+          className='w-[200px] md:w-[300px] lg:w-[450px] absolute top-0 left-1/2 -translate-x-full translate-y-3/4 z-10'
           initial='initial'
           variants={{
             initial: {transform: "translate(-100%, 80%)"},
@@ -177,7 +177,7 @@ export default function QrlStrategy() {
         <motion.img
           src={imgSafariScreen3}
           alt="macbook-safari-screen"
-          className='w-[320px] absolute top-0 left-1/2 translate-x-[19%] translate-y-[150%] z-10'
+          className='w-[177px] md:w-[220px] lg:w-[320px] absolute top-0 left-1/2 translate-x-[19%] translate-y-[150%] z-10'
           initial='initial'
           variants={{
             initial: {transform: "translate(19%, 150%)"},
@@ -189,7 +189,7 @@ export default function QrlStrategy() {
         <motion.img
           src={imgSafariScreen4}
           alt="macbook-safari-screen"
-          className='w-[450px] absolute top-0 left-1/2 translate-x-[10%] translate-y-[100%] z-20'
+          className='w-[200px] md:w-[300px] lg:w-[450px] absolute top-0 left-1/2 translate-x-[10%] translate-y-[100%] z-20'
           initial='initial'
           variants={{
             initial: {transform: "translate(10%, 100%)"},
@@ -201,7 +201,7 @@ export default function QrlStrategy() {
         <motion.img
           src={imgSafariScreen5}
           alt="macbook-safari-screen"
-          className='w-[350px] absolute top-0 left-1/2 translate-x-[10%] translate-y-[245%] z-10'
+          className='w-[177px] md:w-[220px] lg:w-[350px] absolute top-0 left-1/2 translate-x-[10%] translate-y-[245%] z-10'
           initial='initial'
           variants={{
             initial: {transform: "translate(10%, 245%)"},
@@ -214,13 +214,13 @@ export default function QrlStrategy() {
           ref={imgRef}
           src={imgSafariScreen0}
           alt="macbook-safari-screen"
-          className='w-[600px] absolute top-0 left-1/2 -translate-x-1/2 translate-y-full z-40'
+          className='w-[280px] md:w-[400px] lg:w-[600px] absolute top-0 left-1/2 -translate-x-1/2 translate-y-full z-40'
         />
       </section>
       {/* End Macbook screen Animation*/}
 
 
-        <section className='mt-[850px]'>
+        <section className='mt-[440px] md:mt-[640px] lg:mt-[850px]'>
           <div className="content-left mt-8">
             <p className='content-medium post-paragraph'>
               Este emocionante reto venía acompañado de particularidades importantes. Parte fundamental de mi labor
@@ -276,10 +276,10 @@ export default function QrlStrategy() {
               </p>
             </div>
             <div className="flex justify-center mt-16 mb-7">
-              {/*<iframe width="800" height="450" style={{'border': '1px solid rgba(0, 0, 0, 0.1)'}}*/}
-              {/*        src="https://embed.figma.com/design/tNNFCe6DGdLac49dEdozYS/QRL-Web---Client?node-id=0-1&embed-host=share"*/}
-              {/*        allowFullScreen>*/}
-              {/*</iframe>*/}
+              <iframe width="800" height="450" style={{'border': '1px solid rgba(0, 0, 0, 0.1)'}}
+                      src="https://embed.figma.com/design/tNNFCe6DGdLac49dEdozYS/QRL-Web---Client?node-id=0-1&embed-host=share"
+                      allowFullScreen>
+              </iframe>
             </div>
             <div className="content-left">
               <p className='content-medium post-paragraph'>
@@ -323,7 +323,7 @@ export default function QrlStrategy() {
           <div className="mt-10">
             <h3 className='heading-3 mb-5'>Construyendo el Camino. Mis Contribuciones Clave.</h3>
             <div className="content-light-left">
-              <div className="grid grid-cols-2 gap-x-32 gap-y-10">
+              <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-32 md:gap-y-10">
 
                 <p className='post-paragraph-2'>
                   <span className="highlight">Entendiendo la Visión</span><br/>
@@ -361,7 +361,7 @@ export default function QrlStrategy() {
           <div className="mt-10">
             <h3 className='heading-3 mb-5'>Atención al Detalle (Enfoque en el Desarrollo).</h3>
             <div className="content-light-left">
-              <div className="grid grid-cols-2 gap-x-32 gap-y-10">
+              <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-32 md:gap-y-10">
 
                 <p className='post-paragraph-2'>
                   <span className="highlight">Selección Tecnológica Estratégica</span><br/>
@@ -398,7 +398,6 @@ export default function QrlStrategy() {
         <section className="mt-40">
           <div className="w-full flex justify-center">
             {/*<img src={videoTest} alt="img-video-screen" className='rounded-2xl w-[980px]'/>*/}
-            {/*<video src={videoHome} autoPlay muted controls={false} loop className='rounded-2xl w-[980px]'></video>*/}
             <VideoOnScroll src={videoHome} className={'rounded-2xl w-[980px]'}/>
           </div>
 
@@ -423,9 +422,9 @@ export default function QrlStrategy() {
             </motion.p>
           </div>
 
-          <div className="w-full justify-center flex mt-14 gap-10">
-            <a href="https://qrl-web.onrender.com/" className="tabs">Live Demo</a>
-            <a href="https://github.com/abrahamuchos/qrl-web/" className="tabs">GitHub Repositorio</a>
+          <div className="w-full flex flex-col justify-center items-center mt-14 gap-10 md:flex-row">
+            <a href="https://qrl-web.onrender.com/" className="tabs w-[190px] md:w-auto">Live Demo</a>
+            <a href="https://github.com/abrahamuchos/qrl-web/" className="tabs w-[190px] md:w-auto">GitHub Repositorio</a>
           </div>
 
 
