@@ -1,23 +1,30 @@
 import { BrowserRouter, Route, Routes } from "react-router";
+import { ReactLenis, useLenis } from 'lenis/react'
 
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import BaseLayout from "./layouts/BaseLayout.jsx";
-import ProjectDetail from "./pages/ProjectDetail.jsx";
-
 import ScrollToTop from "./hooks/ScrollToTop.jsx";
+import ProjectDetailLayout from "./layouts/ProjectDetailLayout.jsx";
+import QrlStrategy from "./components/projects/QrlStrategy.jsx";
 
 import './styles/App.css'
+import 'lenis/dist/lenis.css'
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop/>
+      <ReactLenis root />
       <Routes>
         <Route path="/" element={<BaseLayout />}>
           <Route index element={<Home />}/>
           <Route path="/projects" element={<Projects />}/>
-          <Route path="/projects/:slug" element={<ProjectDetail />}/>
+
+          <Route path="/projects" element={<ProjectDetailLayout />}>
+            <Route path="mi-aventura-con-qrl-strategy" element={<QrlStrategy />}/>
+          </Route>
+
         </Route>
 
       </Routes>
