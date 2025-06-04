@@ -12,7 +12,6 @@
  * @property {Array<{id: number, alt: (string|null), src: string, thumbnail: string|null, width: number, height: number, [caption: string]}>} images
  */
 import myFirstPost from "./posts/myFirstPost.js";
-import suiteUPCM from "./posts/SuiteUPCM.js";
 import restaurantApi from "./posts/RestaurantTdd.js";
 
 
@@ -23,16 +22,16 @@ import restaurantApi from "./posts/RestaurantTdd.js";
 export const posts = [
   {
     id: 1,
-    order: 2,
-    title: "El Latido Silencioso de un Problema: La Historia Detrás de Suite UPCM",
-    slug: "el-latido-silencioso-de-un-problema-la-historia-detras-de-suite-upcm",
-    subtitle: suiteUPCM.subtitle,
-    header: suiteUPCM.header,
-    description: suiteUPCM.description,
-    date: suiteUPCM.date,
-    stacks: suiteUPCM.stacks,
-    images: suiteUPCM.images,
-    content: suiteUPCM.content
+    order: 1,
+    title: "El Latido Silencioso de un Problema",
+    slug: "el-latido-silencioso-de-un-problema",
+    subtitle: 'Laravel, React y PostgreSQL',
+    header: {
+      src: '/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
+      card: '/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
+      alt: 'Suite UPCM'
+    },
+    description: 'La Suite UPCM es un sistema de información integral que optimiza la gestión de pacientes cardiometabólicos, mejorando la atención médica especializada a través de la digitalización de procesos clave. Este proyecto representa un avance significativo en la eficiencia y calidad del cuidado cardiovascular.',
   },
   {
     id: 2,
