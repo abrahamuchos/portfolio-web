@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "motion/react";
+import Slider from "react-slick";
 
 import ProjectControls from "../ProjectControls.jsx";
 import Stack from "../Stack.jsx";
 import ImageGallery from "../ImageGallery.jsx";
 
 import { posts } from "../../assets/data/posts.js";
+import iconLeft from "../../assets/icons/left-minimal-white.svg";
+import iconRight from "../../assets/icons/right-minimal-white.svg";
 import imgHeader from '../../assets/images/projects/suite-upcm/header/home-screen-with-bg-card-compress.webp'
 import gifSeverance from '../../assets/images/projects/suite-upcm/content/severance.gif'
 import imgDisplayScreen from '../../assets/images/projects/suite-upcm/content/pro-display-screen-pacientes.png'
@@ -13,11 +16,26 @@ import imgScreenProfilePatient from '../../assets/images/projects/suite-upcm/con
 import imgDiagnostic from '../../assets/images/projects/suite-upcm/content/screen-diagnostic.png'
 import imgMacNewPatient from '../../assets/images/projects/suite-upcm/content/macbook-screen-nuevo-paciente-form.png'
 import imgMacbookCalendar from '../../assets/images/projects/suite-upcm/content/macbook-screen-citas-calendario.png'
+import imgSafariStatic from '../../assets/images/projects/suite-upcm/content/screen-estadisticas.png'
+import imgSafariStatic1 from '../../assets/images/projects/suite-upcm/content/Safari-1.png'
+import imgSafariStatic2 from '../../assets/images/projects/suite-upcm/content/Safari-2.png'
+import imgSafariStatic3 from '../../assets/images/projects/suite-upcm/content/Safari-3.png'
+import imgSafariStatic4 from '../../assets/images/projects/suite-upcm/content/Safari-4.png'
+import imgSafariStatic5 from '../../assets/images/projects/suite-upcm/content/Safari-5.png'
+import imgSafariStatic6 from '../../assets/images/projects/suite-upcm/content/Safari-6.png'
+import imgSafariMedicalConsultation
+  from '../../assets/images/projects/suite-upcm/content/safari-screen-consulta-medica-con-penientes.png'
+import imgSafariMedicalConsultationCategories1
+  from '../../assets/images/projects/suite-upcm/content/safari-screen-consulta-medica-categorias-1.png'
+import imgSafariMedicalConsultationCategories2
+  from '../../assets/images/projects/suite-upcm/content/safari-screen-consulta-medica-categorias-2.png'
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function SuiteUpcm() {
   const post = posts.find(post => post.id === 1);
-
+  let sliderRef = useRef(null);
   //Todo: Mover estas imágenes a src/assets sacalas de public ya no es necesario
   const images = [
     {
@@ -166,7 +184,6 @@ export default function SuiteUpcm() {
     },
   ];
 
-
   const stacks = [
     {name: 'Laravel', icon: 'laravel-color-logo.png'},
     {name: 'React', icon: 'react-color-logo.png'},
@@ -176,6 +193,52 @@ export default function SuiteUpcm() {
     {name: 'Trello', icon: 'trello-color-logo.png'},
     {name: 'Git', icon: 'git-color-logo.png'},
   ];
+
+  const carouselSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1.01,
+          slidesToScroll: 1,
+          centerMode: true,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.01,
+          slidesToScroll: 1,
+          centerMode: true,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
+
+  const handlePrev = () => {
+    sliderRef.slickPrev();
+  }
+
+  const handleNext = () => {
+    sliderRef.slickNext();
+  }
 
 
   return (
@@ -311,13 +374,269 @@ export default function SuiteUpcm() {
 
           <div className="flex justify-center">
             <img src={imgMacbookCalendar} alt="calendar"
-                 className='w-[400px] md:w-[550px] lg:w-[620px] xl:w-[820px]'/>
+                 className='w-[600px] md:w-[550px] lg:w-[620px] xl:w-[820px]'/>
           </div>
         </div>
         {/*End Card Agenda médica*/}
 
       </section>
       {/*End ¿Cuán crucial?*/}
+
+      {/*Estadísticas*/}
+      {/*Mobile*/}
+      <section className="absolute w-full h-[610px]  left-0 right-0 overflow-hidden lg:hidden">
+        <img
+          src={imgSafariStatic1}
+          alt="safari1-estadistica"
+          className='w-[280px] absolute top-0 left-1/2  translate-x-[1%] translate-y-[10%] z-10'
+        />
+        <img
+          src={imgSafariStatic2}
+          alt="safari2-estadistica"
+          className='w-[280px] absolute top-0 left-1/2 translate-x-[55%] translate-y-[90%] z-20'
+        />
+        <img
+          src={imgSafariStatic4}
+          alt="safari4-estadistica"
+          className='w-[280px] absolute top-0 left-1/2 translate-x-[5%] translate-y-[235%] z-20'
+        />
+        <img
+          src={imgSafariStatic5}
+          alt="safari5-estadistica"
+          className='w-[280px] absolute top-0 left-1/2 -translate-x-[110%] translate-y-[220%] z-20'
+        />
+        <img
+          src={imgSafariStatic6}
+          alt="safari6-estadistica"
+          className='w-[280px] absolute top-0 left-1/2 -translate-x-[150%] translate-y-[60%] z-20'
+        />
+
+        <img
+          src={imgSafariStatic}
+          alt="safari-estadistica"
+          className='w-[310px] absolute left-1/2 -translate-x-1/2 translate-y-[100%] z-40'
+        />
+      </section>
+      {/*End mobile*/}
+
+      {/*Desktop (lg)*/}
+      <section className='hidden lg:block absolute w-full h-[610px] mt-32 left-0 right-0 overflow-hidden overflow-y-visible lg:mt-40
+         md:h-[700px] lg:h-[910px]'
+      >
+        <motion.img
+          src={imgSafariStatic1}
+          alt="safari1-estadistica"
+          className='w-[280px] lg:w-[315px] absolute top-0 left-1/2  z-10'
+          initial={{x: '30%', y: '10%'}}
+          animate={{
+            x: [0, 5, 0, -5, 0],
+            y: [0, 5, 0, -5, 0]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+          }}
+        />
+        <motion.img
+          src={imgSafariStatic2}
+          alt="safari2-estadistica"
+          className='w-[315px] absolute top-0 left-1/2 z-20'
+          initial={{x: '90%', y: '90%'}}
+          variants={{
+            initial: {transform: "translate(90%, 90%)"},
+            animate: {transform: "translate(91%, 95%)"}
+          }}
+          animate={"animate"}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+          }}
+        />
+        <motion.img
+          src={imgSafariStatic3}
+          alt="safari3-estadistica"
+          className='w-[415px] absolute top-0 left-1/2 z-20'
+          initial={{x: '80%', y: '170%'}}
+          variants={{
+            initial: {transform: "translate(80%, 170%)"},
+            animate: {transform: "translate(81%, 172%)"}
+          }}
+          animate={"animate"}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+          }}
+        />
+        <motion.img
+          src={imgSafariStatic4}
+          alt="safari4-estadistica"
+          className='w-[315px] absolute top-0 left-1/2 z-20'
+          initial={{x: '35%', y: '335%'}}
+          variants={{
+            initial: {transform: "translate(35%, 335%)"},
+            animate: {transform: "translate(35%, 337%)"}
+          }}
+          animate={"animate"}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+          }}
+        />
+        <motion.img
+          src={imgSafariStatic5}
+          alt="safari5-estadistica"
+          className='w-[350px] absolute top-0 left-1/2 z-20'
+          initial={{x: '-150%', y: '220%'}}
+          variants={{
+            initial: {transform: "translate(-150%, 220%)"},
+            animate: {transform: "translate(-155%, 223%)"}
+          }}
+          animate={"animate"}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+          }}
+        />
+        <motion.img
+          src={imgSafariStatic6}
+          alt="safari6-estadistica"
+          className='w-[380px] absolute top-0 left-1/2 z-20'
+          initial={{x: '-150%', y: '60%'}}
+          variants={{
+            initial: {transform: "translate(-150%, 60%)"},
+            animate: {transform: "translate(-152%, 62%)"}
+          }}
+          animate={"animate"}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+          }}
+        />
+
+        <img
+          src={imgSafariStatic}
+          alt="safari-estadistica"
+          className='w-[280px] md:w-[400px] lg:w-[450px] absolute left-1/2 -translate-x-1/2 translate-y-[110%] z-40'
+        />
+      </section>
+      {/*Desktop (lg)*/}
+
+      <section className="mt-[730px] w-full lg:mt-[1200px] ">
+        <div className="content-center">
+          <p className='content-small post-paragraph text-center '>
+            Pero el impacto de Suite UPCM va más allá de la gestión individual de pacientes. A través de la <span
+            className="highlight">recopilación y análisis de datos clínicos</span>, el sistema se convierte en una
+            fuente invaluable de <span className="highlight">conocimiento médico</span>, impulsando la <span
+            className="highlight">investigación en el campo de la cardiología</span>.
+          </p>
+        </div>
+      </section>
+      {/*End Estadísticas*/}
+
+      {/*Ritmo Ágil*/}
+      <section className="w-full mt-40">
+        <h2 className="heading-2 w-full mb-10 md:w-[560px]">
+          El Ritmo Ágil del Desarrollo.<br/>
+          Un Corazón latiendo en Sincronía.
+        </h2>
+
+        <div className="grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-5 lg:gap-x-10 xl:gap-x-32">
+          <p className="w-full md:max-w-[550px] post-paragraph">
+            Para abordar la complejidad de este desafío y asegurar una respuesta ágil a las necesidades cambiantes del
+            proyecto, adoptamos la metodología <span className="highlight">Scrum</span>. Trabajamos en ciclos cortos de
+            una semana, denominados sprints, lo que nos <span className="highlight">permitió validar rápidamente nuestras ideas y entregar valor</span> de
+            forma continua.
+          </p>
+          <p className="w-full md:max-w-[550px] post-paragraph">
+            Esta cadencia de trabajo fue posible gracias a un <span
+            className="highlight">equipo multidisciplinario</span> donde la sinergia entre un programador front-end, un
+            back-end y un diseñador gráfico. En cada paso, la invaluable retroalimentación del <span
+            className="highlight">Dr. Carlos Ponte</span> actuó como una brújula, orientando el desarrollo para que la
+            plataforma realmente respondiera a las <span className="highlight">expectativas y necesidades de los profesionales de la cardiología</span>.
+          </p>
+        </div>
+
+        {/* Card Carousel*/}
+        <div className="slider-container mt-16">
+          <Slider ref={slider => {
+            sliderRef = slider
+          }} {...carouselSettings} >
+
+            <div className="px-1 lg:px-4">
+              <div className="card tertiary pl-8 pt-5 md:pl-12 md:pt-9 lg:pl-20">
+                <h4 className='post-paragraph highlight mb-5 lg:mb-[32px]'>
+                  Consulta Médica.<br/>
+                  Permite almacenar, organizar y gestionar la información clave del historial médico.
+                </h4>
+
+                <div className="flex justify-center">
+                  <img src={imgSafariMedicalConsultation} alt="calendar"
+                       className='w-[600px] md:w-[590px] lg:w-[620px] xl:w-[867px]'/>
+                </div>
+              </div>
+            </div>
+
+            <div className="px-1 lg:px-4">
+              <div className="card tertiary pl-8 pt-5 md:pl-12 md:pt-9 lg:pl-20">
+                <h4 className='post-paragraph highlight mb-5 lg:mb-[40px]'>
+                  Componentes fundamentales.<br/>
+                  Secciones claras para facilitar su comprensión y optimizar la atención médica.
+                </h4>
+
+                <div className="flex justify-end">
+                  <img src={imgSafariMedicalConsultationCategories1} alt="calendar"
+                       className='w-[600px] md:w-[550px] lg:w-[620px] xl:w-[820px]'/>
+                </div>
+              </div>
+            </div>
+
+            <div className="px-1 lg:px-4">
+              <div className="card tertiary pr-8 pt-5 md:pr-12 md:pt-9 lg:pr-20">
+                <div className="flex flex-col items-start">
+                  <h4 className='self-end post-paragraph highlight mb-5 text-end'>
+                    Aún más componentes.<br/>
+                    Una visión clara y <br className='min-[484px]:hidden'/>  organizada de<br/> toda la consulta médica.
+                  </h4>
+                  <img src={imgSafariMedicalConsultationCategories2} alt="calendar"
+                       className='self-start w-[600px] md:w-[550px] lg:w-[620px] xl:w-[820px]'/>
+                </div>
+              </div>
+            </div>
+
+          </Slider>
+        </div>
+
+        {/*Carousel Controls*/}
+        <div className="flex justify-end gap-5">
+          <div className="carousel-controls p-2.5">
+            <a onClick={handlePrev}>
+              <img src={iconLeft} alt="left-icon" className='w-[20px] h-[20px] text-white'/>
+            </a>
+          </div>
+          <div className="carousel-controls p-2.5">
+            <a onClick={handleNext}>
+              <img src={iconRight} alt="right-icon" className='w-[20px] h-[20px] text-white'/>
+            </a>
+          </div>
+        </div>
+        {/*End Carousel Controls*/}
+        {/* End Card Carousel*/}
+
+
+      </section>
+      {/*End Ritmo Ágil*/}
 
 
       {/*Gallery*/}
