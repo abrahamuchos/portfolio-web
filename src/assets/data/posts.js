@@ -29,7 +29,7 @@ export const posts = [
     slug: "el-latido-silencioso-de-un-problema",
     subtitle: 'Laravel, React y PostgreSQL',
     header: {
-      src: getHeaderImageURL('suite-upcm', 'home-screen-with-bg-compress.webp'),
+      src: getHeaderImageURL('suite-upcm', 'home-screen-with-bg-card-compress.webp'),
       card: getHeaderImageURL('suite-upcm', 'image-post_thumbnail_900x500.jpg', true),
       alt: 'Suite UPCM'
     },
