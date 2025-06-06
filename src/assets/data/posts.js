@@ -51,15 +51,17 @@ export const posts = [
   {
     id: 3,
     order: 3,
-    title: "Restaurant API:  Explorando TDD en el Desarrollo Back-end",
-    slug: "restaurant-api-explorando-tdd-en-el-desarrollo-back-end",
-    subtitle: restaurantApi.subtitle,
-    header: restaurantApi.header,
-    description: restaurantApi.description,
-    date: restaurantApi.date,
-    stacks: restaurantApi.stacks,
-    images: restaurantApi.images,
-    content: restaurantApi.content
+    title: "Explorando TDD en el Back-end",
+    slug: "explorando-tdd-en-el-back-end",
+    subtitle: "Api Rest Bajo la Metodología TDD en Laravel",
+    header: {
+      src: getHeaderImageURL('restaurant-tdd', 'header-code-bg-compress.jpeg'),
+      card: getHeaderImageURL('restaurant-tdd', 'header-code-bg_thumbnail_900x500.jpg', true),
+      alt: 'Restaurant TDD'
+    },
+    description: 'Esta API está diseñada para la gestión integral de restaurantes, permitiendo a los usuarios administrar múltiples\n' +
+      'establecimientos, agregar y organizar una variedad de platos.',
+
   },
   {
     id: 4,

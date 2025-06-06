@@ -101,6 +101,12 @@ body {
 
   /* End Headings, Paragraphs, Consolas */
 
+  /*Content*/
+  .wrap{
+    @apply px-2 lg:px-12
+  }
+  /*End Content*/
+
   /* Components */
   .line {
     @apply w-screen h-[1px] bg-commands-gray

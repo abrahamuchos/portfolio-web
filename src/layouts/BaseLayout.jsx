@@ -7,7 +7,7 @@ export default function BaseLayout() {
   return (
     <div className='relative flex flex-col min-h-screen'>
       <Navigation/>
-      <main className='flex-grow px-2 lg:px-12 relative'>
+      <main className='flex-grow relative'>
         <Outlet/>
 
       </main>

@@ -8,6 +8,7 @@ import ScrollToTop from "./hooks/ScrollToTop.jsx";
 import ProjectDetailLayout from "./layouts/ProjectDetailLayout.jsx";
 import QrlStrategy from "./components/projects/QrlStrategy.jsx";
 import SuiteUpcm from "./components/projects/SuiteUpcm.jsx";
+import RestaurantTdd from "./components/projects/RestaurantTdd.jsx";
 
 import './styles/App.css'
 import 'lenis/dist/lenis.css'
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projects" element={<ProjectDetailLayout />}>
             <Route path="el-latido-silencioso-de-un-problema" element={<SuiteUpcm />}/>
             <Route path="mi-aventura-con-qrl-strategy" element={<QrlStrategy />}/>
+            <Route path="explorando-tdd-en-el-back-end" element={<RestaurantTdd />}/>
           </Route>
 
         </Route>
