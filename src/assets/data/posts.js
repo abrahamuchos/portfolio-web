@@ -14,6 +14,8 @@
 import myFirstPost from "./posts/myFirstPost.js";
 import restaurantApi from "./posts/RestaurantTdd.js";
 
+import { getHeaderImageURL } from "../../utils/image.js";
+
 
 /**
  * Posts Array
@@ -27,8 +29,8 @@ export const posts = [
     slug: "el-latido-silencioso-de-un-problema",
     subtitle: 'Laravel, React y PostgreSQL',
     header: {
-      src: '/images/posts/suite-upcm/header/home-screen-with-bg-compress.webp',
-      card: '/images/posts/suite-upcm/header/image-post_thumbnail_900x500.jpg',
+      src: getHeaderImageURL('suite-upcm', 'home-screen-with-bg-compress.webp'),
+      card: getHeaderImageURL('suite-upcm', 'image-post_thumbnail_900x500.jpg', true),
       alt: 'Suite UPCM'
     },
     description: 'La Suite UPCM es un sistema de información integral que optimiza la gestión de pacientes cardiometabólicos, mejorando la atención médica especializada a través de la digitalización de procesos clave. Este proyecto representa un avance significativo en la eficiencia y calidad del cuidado cardiovascular.',
