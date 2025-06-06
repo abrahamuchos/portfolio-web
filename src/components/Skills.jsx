@@ -45,7 +45,7 @@ export default function Skills({id}) {
 
 
   return (
-    <section id={id} className='relative'>
+    <section id={id} className='relative wrap'>
       <p className='mb-2.5'>Habilidades</p>
       <h2 className='heading-2 mb-10'>Mi caja de herramientas.</h2>
 

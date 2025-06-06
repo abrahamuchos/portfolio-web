@@ -8,7 +8,7 @@ export default function Projects() {
   const remainingPosts = posts.slice(1, 4);
 
   return (
-    <section>
+    <section className='wrap'>
       <p className='mb-2.5'>Proyectos</p>
       <h2 className='heading-2 mb-10'>De la idea a la acción: mis proyectos destacados.</h2>
 

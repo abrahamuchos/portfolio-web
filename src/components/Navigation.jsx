@@ -30,7 +30,7 @@ export default function Navigation() {
 
 
         {/*Desktop Navigation*/}
-        <div className="hidden space-x-2 w-1/3 text-base font-Instrument font-normal text-light-white
+        <div className="hidden space-x-2 lg:w-[40%] xl:w-1/3 text-base font-Instrument font-normal text-light-white
             lg:flex lg:justify-between lg:items-center">
           {links.map((link, i) => (
             <HashLink key={i} to={link.path + (link.hash ?? '')}>

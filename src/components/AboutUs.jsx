@@ -9,7 +9,7 @@ import React from "react";
 export default function AboutUs({id}) {
 
   return (
-    <section id={id}>
+    <section id={id} className='wrap'>
       <p className='mb-2.5'>Sobre Mí</p>
       <h2 className='heading-2 mb-2.5'>Hola, soy Abraham.</h2>
       <p className="paragraph">
