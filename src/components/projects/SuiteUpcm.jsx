@@ -258,7 +258,7 @@ export default function SuiteUpcm() {
     <>
       {/*Header and intro*/}
       <section>
-        <h1 className='heading-1 mb-2.5'>Mi Aventura con QRL Strategy</h1>
+        <h1 className='heading-1 mb-2.5'>El Latido Silencioso de un Problema</h1>
         <p className='mb-8'>2024</p>
         <h2 className="heading-3">
           La Suite UPCM es un sistema de información integral que optimiza la gestión de pacientes cardiometabólicos,
