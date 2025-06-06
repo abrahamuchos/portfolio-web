@@ -26,7 +26,7 @@ export default function ProjectDetailLayout() {
         </SeparatorCommand>
       </div>
 
-      <section className='w-full mt-16 mb-20'>
+      <section className='w-full mt-16 mb-20 wrap'>
         <ContactCard/>
       </section>
       {/*End Contact*/}

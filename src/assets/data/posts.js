@@ -11,9 +11,6 @@
  * @property {Array<{name: string, icon: string}>} stacks
  * @property {Array<{id: number, alt: (string|null), src: string, thumbnail: string|null, width: number, height: number, [caption: string]}>} images
  */
-import myFirstPost from "./posts/myFirstPost.js";
-import restaurantApi from "./posts/RestaurantTdd.js";
-
 import { getHeaderImageURL } from "../../utils/image.js";
 
 
@@ -51,92 +48,16 @@ export const posts = [
   {
     id: 3,
     order: 3,
-    title: "Restaurant API:  Explorando TDD en el Desarrollo Back-end",
-    slug: "restaurant-api-explorando-tdd-en-el-desarrollo-back-end",
-    subtitle: restaurantApi.subtitle,
-    header: restaurantApi.header,
-    description: restaurantApi.description,
-    date: restaurantApi.date,
-    stacks: restaurantApi.stacks,
-    images: restaurantApi.images,
-    content: restaurantApi.content
-  },
-  {
-    id: 4,
-    order: 4,
-    title: "My fourth post",
-    slug: "my-fourth-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
-  },
-  {
-    id: 5,
-    order: 5,
-    title: "My fifth post",
-    slug: "my-fifth-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
-  },
-  {
-    id: 6,
-    order: 6,
-    title: "My sixth post",
-    slug: "my-sixth-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
-  },
-  {
-    id: 7,
-    order: 7,
-    title: "My seventh post",
-    slug: "my-seventh-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
-  },
-  {
-    id: 8,
-    order: 8,
-    title: "My eighth post",
-    slug: "my-eighth-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
-  },
-  {
-    id: 9,
-    order: 9,
-    title: "My ninth post",
-    slug: "my-ninth-post",
-    subtitle: myFirstPost.subtitle,
-    header: myFirstPost.header,
-    description: myFirstPost.description,
-    date: myFirstPost.date,
-    stacks: myFirstPost.stacks,
-    images: myFirstPost.images,
-    content: myFirstPost.content
+    title: "Explorando TDD en el Back-end",
+    slug: "explorando-tdd-en-el-back-end",
+    subtitle: "Api Rest Bajo la Metodología TDD en Laravel",
+    header: {
+      src: getHeaderImageURL('restaurant-tdd', 'header-code-bg-compress.jpeg'),
+      card: getHeaderImageURL('restaurant-tdd', 'header-code-bg_thumbnail_900x500.jpg', true),
+      alt: 'Restaurant TDD'
+    },
+    description: 'Esta API está diseñada para la gestión integral de restaurantes, permitiendo a los usuarios administrar múltiples\n' +
+      'establecimientos, agregar y organizar una variedad de platos.',
+
   },
 ];
