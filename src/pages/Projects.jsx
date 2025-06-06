@@ -17,7 +17,7 @@ export default function Projects() {
         </SeparatorCommand>
       </div>
 
-      <section className='mb-10'>
+      <section className='wrap mb-10'>
         <div className='w-full mb-5'>
           <Card
             variant='primary'
@@ -50,7 +50,7 @@ export default function Projects() {
         </SeparatorCommand>
       </div>
 
-      <section className='w-full mt-16 mb-20'>
+      <section className='wrap w-full mt-16 mb-20'>
         <ContactCard/>
       </section>
 

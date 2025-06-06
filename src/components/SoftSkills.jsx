@@ -8,7 +8,7 @@ export default function SoftSkills() {
 
 
   return (
-    <section>
+    <section className='wrap'>
       <h2 className='heading-3 !text-light-white'>
         Más allá de lo técnico: Habilidades esenciales para el  éxito
       </h2>

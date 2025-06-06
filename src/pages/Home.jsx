@@ -50,7 +50,7 @@ export default function Home() {
         </SeparatorCommand>
       </div>
 
-      <section id='contact' className='w-full mt-16 mb-20'>
+      <section id='contact' className='wrap w-full mt-16 mb-20'>
         <ContactCard/>
       </section>
 
