@@ -433,7 +433,7 @@ export default function SuiteUpcm() {
       {/*End mobile*/}
 
       {/*Desktop (lg)*/}
-      <section className='hidden lg:block absolute w-full h-[610px] mt-32 left-0 right-0 overflow-hidden overflow-y-visible lg:mt-40
+      <section id='animacionEstadistica' className='hidden lg:block absolute w-full h-[610px] mt-32 left-0 right-0 overflow-hidden overflow-y-visible lg:mt-40
          md:h-[700px] lg:h-[910px]'
       >
         <motion.img
@@ -442,8 +442,8 @@ export default function SuiteUpcm() {
           className='w-[280px] lg:w-[315px] absolute top-0 left-1/2  z-10'
           initial={{x: '30%', y: '10%'}}
           animate={{
-            x: [0, 5, 0, -5, 0],
-            y: [0, 5, 0, -5, 0]
+            x: ['30%', '31.5%', '30%', '29.5%', '30%'],
+            y: ['10%', '10.5%', '10%', '9.5%', '10%']
           }}
           transition={{
             duration: 10,
@@ -457,13 +457,12 @@ export default function SuiteUpcm() {
           alt="safari2-estadistica"
           className='w-[315px] absolute top-0 left-1/2 z-20'
           initial={{x: '90%', y: '90%'}}
-          variants={{
-            initial: {transform: "translate(90%, 90%)"},
-            animate: {transform: "translate(91%, 95%)"}
+          animate={{
+            x: ['90%', '91.5%', '90%'],
+            y: ['90%', '91.5%', '90%']
           }}
-          animate={"animate"}
           transition={{
-            duration: 2,
+            duration: 7,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "easeInOut"
@@ -474,13 +473,12 @@ export default function SuiteUpcm() {
           alt="safari3-estadistica"
           className='w-[415px] absolute top-0 left-1/2 z-20'
           initial={{x: '80%', y: '170%'}}
-          variants={{
-            initial: {transform: "translate(80%, 170%)"},
-            animate: {transform: "translate(81%, 172%)"}
+          animate={{
+            x: ['80%', '81%', '80%'],
+            y: ['170%', '172%', '170%']
           }}
-          animate={"animate"}
           transition={{
-            duration: 5,
+            duration: 10,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "easeInOut"
@@ -491,13 +489,12 @@ export default function SuiteUpcm() {
           alt="safari4-estadistica"
           className='w-[315px] absolute top-0 left-1/2 z-20'
           initial={{x: '35%', y: '335%'}}
-          variants={{
-            initial: {transform: "translate(35%, 335%)"},
-            animate: {transform: "translate(35%, 337%)"}
+          animate={{
+            x: ['35%', '35.5%', '35%'],
+            y: ['335%', '337.5%', '335%']
           }}
-          animate={"animate"}
           transition={{
-            duration: 3,
+            duration: 5,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "easeInOut"
@@ -508,13 +505,12 @@ export default function SuiteUpcm() {
           alt="safari5-estadistica"
           className='w-[350px] absolute top-0 left-1/2 z-20'
           initial={{x: '-150%', y: '220%'}}
-          variants={{
-            initial: {transform: "translate(-150%, 220%)"},
-            animate: {transform: "translate(-155%, 223%)"}
+          animate={{
+            x: ['-150%', '-151%', '-150%'],
+            y: ['220%', '222.5%', '220%']
           }}
-          animate={"animate"}
           transition={{
-            duration: 4,
+            duration: 8,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "easeInOut"
@@ -525,11 +521,10 @@ export default function SuiteUpcm() {
           alt="safari6-estadistica"
           className='w-[380px] absolute top-0 left-1/2 z-20'
           initial={{x: '-150%', y: '60%'}}
-          variants={{
-            initial: {transform: "translate(-150%, 60%)"},
-            animate: {transform: "translate(-152%, 62%)"}
+          animate={{
+            x: ['-150%', '-152.5%', '-150%'],
+            y: ['60%', '63%', '60%']
           }}
-          animate={"animate"}
           transition={{
             duration: 7,
             repeat: Infinity,

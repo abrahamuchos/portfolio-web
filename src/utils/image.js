@@ -16,7 +16,6 @@ function _getImage(allProjectImages, fullPath, projectFolderName, imageName){
     return allProjectImages[fullPath].default;
 
   }else{
-    console.log('Flag>>', allProjectImages, fullPath);
     console.warn(`Imagen no encontrada en ${projectFolderName}: ${imageName} | La ruta ${fullPath} no existe.}`);
     return placeholderBrokenImage['../assets/images/no-image-placeholder.svg'].default;
   }
