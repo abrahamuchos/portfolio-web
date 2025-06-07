@@ -16,7 +16,7 @@ export default function RestaurantTdd() {
   const stacks = [
     {name: 'Laravel', icon: 'laravel-color-logo.png'},
     {name: 'SQLite', icon: 'sqlite-color-logo.png'},
-    {name: 'PHPUnit', icon: 'phpunit-color-logo.png'}, // Todo: agrega w-[56px] en la imagen
+    {name: 'PHPUnit', icon: 'phpunit-color-logo.png', className: 'w-[56px]'}, // Todo: agrega w-[56px] en la imagen
   ];
 
   return (
