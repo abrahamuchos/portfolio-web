@@ -180,7 +180,7 @@ body {
   }
 
   .card.tertiary{
-    @apply w-full bg-very-dark-black rounded-2xl overflow-hidden
+    @apply w-full bg-black rounded-2xl overflow-hidden
   }
   /*End Cards*/
 

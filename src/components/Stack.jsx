@@ -1,11 +1,11 @@
 /**
  *
- * @param {Array<{name: string, icon: string}>} stacks
+ * @param {Array<{name: string, icon: string, className: string|undefined}>} stacks
  * @param {string|null} className
  * @returns {JSX.Element}
  * @constructor
  */
-export default function Stack({stacks, className}) {
+export default function Stack({stacks, className, }) {
 
   return (
     <div className={className}>
@@ -15,7 +15,7 @@ export default function Stack({stacks, className}) {
       >
         {stacks.map((stack, index) => (
           <li key={index} className='flex items-center gap-2 consola-1'>
-            <img src={`/images/logos/${stack.icon}`} alt={stack.name} className='w-4 h-4' />
+            <img src={`/images/logos/${stack.icon}`} alt={stack.name} className={stack?.className ?? 'w-4 h-4'} />
             {stack.name}
           </li>
         ))}

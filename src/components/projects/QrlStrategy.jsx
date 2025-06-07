@@ -107,7 +107,7 @@ export default function QrlStrategy() {
   return (
     <>
       {/*Header and intro*/}
-      <section>
+      <section className='wrap'>
         <h1 className='heading-1 mb-2.5'>Mi Aventura con QRL Strategy</h1>
         <p className='mb-8'>2025</p>
         <h2 className="heading-3">
@@ -142,14 +142,14 @@ export default function QrlStrategy() {
       {/*End Header and intro*/}
 
       {/*El desafío*/}
-      <section className='mt-32 relative'>
+      <section className='wrap mt-32 relative'>
         <h2 className="heading-2 mb-10">
           El Desafío.
         </h2>
       </section>
 
       {/* Macbook screen Animation*/}
-      <section id='flag' className=' absolute w-full h-[410px]  left-0 right-0 overflow-hidden md:h-[600px] lg:h-[850px]'>
+      <section id='flag' className='absolute w-full h-[410px]  left-0 right-0 overflow-hidden md:h-[600px] lg:h-[850px]'>
         <motion.img
           src={imgSafariScreen1}
           alt="macbook-safari-screen-1"
@@ -220,7 +220,7 @@ export default function QrlStrategy() {
       {/* End Macbook screen Animation*/}
 
 
-        <section className='mt-[440px] md:mt-[640px] lg:mt-[850px]'>
+        <section className='wrap mt-[440px] md:mt-[640px] lg:mt-[850px]'>
           <div className="content-left mt-8">
             <p className='content-medium post-paragraph'>
               Este emocionante reto venía acompañado de particularidades importantes. Parte fundamental de mi labor
@@ -238,7 +238,7 @@ export default function QrlStrategy() {
         {/*End El desafío*/}
 
         {/*La meta*/}
-        <section className='mt-64'>
+        <section className='wrap mt-64'>
           <h2 className="heading-2 mb-10">
             La Meta.
           </h2>
@@ -294,7 +294,7 @@ export default function QrlStrategy() {
         {/*End La meta*/}
 
         {/*Mi Rol en la Travesía Digital.*/}
-        <section className="mt-40">
+        <section className="wrap mt-40">
           <h2 className="heading-2 mb-10 text-center">
             Mi Rol en la Travesía Digital.
           </h2>
@@ -423,11 +423,9 @@ export default function QrlStrategy() {
           </div>
 
           <div className="w-full flex flex-col justify-center items-center mt-14 gap-10 md:flex-row">
-            <a href="https://qrl-web.onrender.com/" className="tabs w-[190px] md:w-auto">Live Demo</a>
-            <a href="https://github.com/abrahamuchos/qrl-web/" className="tabs w-[190px] md:w-auto">GitHub Repositorio</a>
+            <a href="https://qrl-web.onrender.com/" target='_blank' className="tabs w-[190px] md:w-auto">Live Demo</a>
+            <a href="https://github.com/abrahamuchos/qrl-web/" target='_blank' className="tabs w-[190px] md:w-auto">GitHub Repositorio</a>
           </div>
-
-
         </section>
         {/*  End El Resultado */}
 
@@ -444,7 +442,6 @@ export default function QrlStrategy() {
 
 
       <ProjectControls className='mt-32 mb-16' postId={post.id}/>
-
     </>
   )
     ;
