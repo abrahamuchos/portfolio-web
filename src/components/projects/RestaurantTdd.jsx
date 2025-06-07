@@ -12,7 +12,6 @@ import imgScreenCode from "../../assets/images/projects/restaurant-tdd/content/s
 
 export default function RestaurantTdd() {
   const post = posts.find(post => post.id === 3);
-  console.log(post);
   const stacks = [
     {name: 'Laravel', icon: 'laravel-color-logo.png'},
     {name: 'SQLite', icon: 'sqlite-color-logo.png'},

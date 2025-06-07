@@ -426,8 +426,6 @@ export default function QrlStrategy() {
             <a href="https://qrl-web.onrender.com/" target='_blank' className="tabs w-[190px] md:w-auto">Live Demo</a>
             <a href="https://github.com/abrahamuchos/qrl-web/" target='_blank' className="tabs w-[190px] md:w-auto">GitHub Repositorio</a>
           </div>
-
-
         </section>
         {/*  End El Resultado */}
 
@@ -444,7 +442,6 @@ export default function QrlStrategy() {
 
 
       <ProjectControls className='mt-32 mb-16' postId={post.id}/>
-
     </>
   )
     ;
