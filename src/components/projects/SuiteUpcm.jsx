@@ -257,7 +257,7 @@ export default function SuiteUpcm() {
   return (
     <>
       {/*Header and intro*/}
-      <section>
+      <section className='wrap'>
         <h1 className='heading-1 mb-2.5'>El Latido Silencioso de un Problema</h1>
         <p className='mb-8'>2024</p>
         <h2 className="heading-3">
@@ -268,7 +268,7 @@ export default function SuiteUpcm() {
         <Stack stacks={stacks} className="mt-8 mb-10"/>
       </section>
 
-      <section>
+      <section className='wrap'>
         <img src={imgHeader} alt="suite-upcm-screen" className='rounded-lg mb-8 w-full'/>
         <div
           className="flex flex-col justify-center items-center gap-y-5 md:flex-row md:gap-x-10 md:justify-between md:items-center xl:gap-0">
@@ -301,7 +301,7 @@ export default function SuiteUpcm() {
       {/*End Header and intro*/}
 
       {/*¿Cuán crucial?*/}
-      <section className='mt-32 lg:mt-36'>
+      <section className='wrap mt-32 lg:mt-36'>
         <div className='w-full flex flex-col items-center mb-10'>
           <img src={imgDisplayScreen} alt="display-screen" className='w-full md:w-[650px] xl:w-[750px] mb-12'/>
 
@@ -397,7 +397,7 @@ export default function SuiteUpcm() {
 
       {/*Estadísticas*/}
       {/*Mobile*/}
-      <section className="absolute w-full h-[610px]  left-0 right-0 overflow-hidden lg:hidden">
+      <section className="wrap absolute w-full h-[610px]  left-0 right-0 overflow-hidden lg:hidden">
         <img
           src={imgSafariStatic1}
           alt="safari1-estadistica"
@@ -433,7 +433,7 @@ export default function SuiteUpcm() {
       {/*End mobile*/}
 
       {/*Desktop (lg)*/}
-      <section id='animacionEstadistica' className='hidden lg:block absolute w-full h-[610px] mt-32 left-0 right-0 overflow-hidden overflow-y-visible lg:mt-40
+      <section className='hidden lg:block absolute w-full h-[610px] mt-32 left-0 right-0 overflow-hidden overflow-y-visible lg:mt-40
          md:h-[700px] lg:h-[910px]'
       >
         <motion.img
@@ -560,7 +560,7 @@ export default function SuiteUpcm() {
       {/*End Estadísticas*/}
 
       {/*Ritmo Ágil*/}
-      <section className="w-full mt-40">
+      <section className="wrap w-full mt-40">
         <h2 className="heading-2 w-full mb-10 md:w-[560px]">
           El Ritmo Ágil del Desarrollo.<br/>
           Un Corazón latiendo en Sincronía.
@@ -581,9 +581,11 @@ export default function SuiteUpcm() {
             plataforma realmente respondiera a las <span className="highlight">expectativas y necesidades de los profesionales de la cardiología</span>.
           </p>
         </div>
+      </section>
 
-        {/* Card Carousel*/}
-        <div className="slider-container mt-16">
+      {/* Card Carousel*/}
+      <section className='mt-16'>
+        <div className="slider-container">
           <Slider ref={slider => {
             sliderRef = slider
           }} {...carouselSettings} >
@@ -628,12 +630,11 @@ export default function SuiteUpcm() {
                 </div>
               </div>
             </div>
-
           </Slider>
         </div>
 
         {/*Carousel Controls*/}
-        <div className="flex justify-end gap-5">
+        <div className="wrap flex justify-end gap-5">
           <div className="carousel-controls p-2.5">
             <a onClick={handlePrev}>
               <img src={iconLeft} alt="left-icon" className='w-[20px] h-[20px] text-white'/>
@@ -646,14 +647,12 @@ export default function SuiteUpcm() {
           </div>
         </div>
         {/*End Carousel Controls*/}
-        {/* End Card Carousel*/}
-
-
       </section>
+      {/* End Card Carousel*/}
       {/*End Ritmo Ágil*/}
 
       {/*Sumergiéndome*/}
-      <section className="w-full mt-40">
+      <section className="wrap w-full mt-40">
         <h2 className="heading-2 w-full mb-10">
           Sumergiéndome en el Mundo de la Cardiología.<br/>
           El Arte de la Entrevista.
@@ -718,7 +717,7 @@ export default function SuiteUpcm() {
       {/*End Sumergiéndome*/}
 
       {/*Desafíos en el desarrollo de Suite UPCM*/}
-      <section className="mt-52">
+      <section className="wrap mt-52">
         <div className="w-full flex flex-col items-center">
           <h2 className="w-full heading-2 text-center mb-20 md:w-[650px] lg:w-[816px]">
             ¿Desafíos en el desarrollo de Suite UPCM?<br/>
@@ -822,7 +821,7 @@ export default function SuiteUpcm() {
       {/*End Desafíos en el desarrollo de Suite UPCM*/}
 
       {/*Conclusion*/}
-      <section className="my-60">
+      <section className="wrap my-60">
         <div className="flex  flex-col items-center">
           <motion.p
             className='post-paragraph text-center w-full lg:w-[731px]'
@@ -854,7 +853,7 @@ export default function SuiteUpcm() {
       {/*Gallery*/}
       {
         images.length ?
-          <section className='w-full mt-20'>
+          <section className='wrap w-full mt-20'>
             <ImageGallery images={images}/>
           </section>
           : ''
