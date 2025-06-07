@@ -844,7 +844,7 @@ export default function SuiteUpcm() {
           </motion.p>
 
           <div className="w-full flex justify-center mt-14">
-            <a href="https://youtu.be/GQJVM0MzyK4" className="tabs w-auto">Tratamientos - Youtube</a>
+            <a href="https://youtu.be/GQJVM0MzyK4" target='_blank' className="tabs w-auto">Tratamientos - Youtube</a>
           </div>
         </div>
       </section>
