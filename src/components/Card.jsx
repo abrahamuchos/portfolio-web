@@ -1,5 +1,3 @@
-import { Link } from "react-router";
-
 /**
  *
  * @param {string} [variant='primary'] - The variant of the card. Can be 'primary' or 'secondary'.
@@ -22,10 +20,10 @@ export default function Card({variant = 'primary', title, subtitle, description,
               <h3 className='card-title'>{title}</h3>
               <p className='card-subtitle'>{subtitle}</p>
               <p className='card-paragraph'>{description}</p>
-              <Link to={link} className="btn-primary">Leer más</Link>
+              <a href={link} className="btn-primary">Leer más</a>
             </div>
             <div className="card-img">
-              <img src={image} alt={title}/>
+            <img src={image} alt={title}/>
             </div>
           </div>
 
@@ -36,7 +34,7 @@ export default function Card({variant = 'primary', title, subtitle, description,
               <h3 className='card-title'>{title}</h3>
               <p className='card-subtitle'>{subtitle}</p>
               <p className='card-paragraph'>{description}</p>
-              <Link to={link} className="btn-primary">Leer más</Link>
+              <a href={link} className="btn-primary">Leer más</a>
             </div>
             <div className="card-img">
               <img src={image} alt={title}/>

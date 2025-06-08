@@ -3,7 +3,7 @@ import Terminal from "./Terminal.jsx";
 export default function Hero() {
 
   return (
-    <section className="flex flex-col items-center min-w-screen gap-5
+    <section className="wrap flex flex-col items-center min-w-screen gap-5
          md:flex-row
          lg:min-h-[70vh] lg:gap-10
          xl:gap-32">

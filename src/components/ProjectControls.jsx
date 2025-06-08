@@ -14,10 +14,10 @@ import rightArrow from '../assets/icons/right.svg';
 export default function ProjectControls({className = '', postId}) {
 
   const prevPost = postId > 1 ? posts[postId - 2] : null;
-  const nextPost = posts.length - 1 > postId ? posts[postId] : null;
+  const nextPost = posts.length - 1 >= postId ? posts[postId] : null;
 
   return (
-    <div className={`grid grid-cols-2 justify-between items-center ${className}`}>
+    <div className={`wrap grid grid-cols-2 justify-between items-center ${className}`}>
       {prevPost === null ?
         <div></div>
         : <Link to={`/projects/${prevPost.slug}`} className='flex flex-row items-center gap-2.5'>
