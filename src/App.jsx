@@ -9,6 +9,7 @@ import ProjectDetailLayout from "./layouts/ProjectDetailLayout.jsx";
 import QrlStrategy from "./components/projects/QrlStrategy.jsx";
 import SuiteUpcm from "./components/projects/SuiteUpcm.jsx";
 import RestaurantTdd from "./components/projects/RestaurantTdd.jsx";
+import Comgrafic from "./components/projects/Comgrafic.jsx";
 
 import './styles/App.css'
 import 'lenis/dist/lenis.css'
@@ -27,6 +28,7 @@ function App() {
             <Route path="el-latido-silencioso-de-un-problema" element={<SuiteUpcm />}/>
             <Route path="mi-aventura-con-qrl-strategy" element={<QrlStrategy />}/>
             <Route path="explorando-tdd-en-el-back-end" element={<RestaurantTdd />}/>
+            <Route path="comgrafic-su-presencia-digital" element={<Comgrafic />}/>
           </Route>
 
         </Route>
