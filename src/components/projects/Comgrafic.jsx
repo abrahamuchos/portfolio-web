@@ -178,7 +178,7 @@ export default function Comgrafic() {
       {/*Header and intro*/}
       <section className='wrap'>
         <h1 className='heading-1 mb-2.5'>Comgrafic su Presencia Digital</h1>
-        <p className='mb-8'>2024</p>
+        <p className='mb-8'>2019</p>
         <h2 className="heading-3">
           Este proyecto consistió en la creación de la nueva página web para Comgrafic, una reconocida empresa de
           Barcelona con más de 35 años de trayectoria en servicios de preimpresión, impresión y encuadernación. La
