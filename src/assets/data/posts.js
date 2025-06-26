@@ -60,4 +60,18 @@ export const posts = [
       'establecimientos, agregar y organizar una variedad de platos.',
 
   },
+  {
+    id: 4,
+    order: 4,
+    title: "Comgrafic su Presencia Digital",
+    slug: "comgrafic-su-presencia-digital",
+    subtitle: "Laravel, Blade, Bootstrap y MySql",
+    header: {
+      src: getHeaderImageURL('comgrafic', 'header-comgrafic-compress.png'),
+      card: getHeaderImageURL('comgrafic', 'header-comgrafic_thumbnail_900x500.jpg', true),
+      alt: 'Comgrafic Web'
+    },
+    description: 'Desarrollo completo de la nueva web para Comgrafic, empresa líder en impresión, con un robusto sistema multilenguaje y un diseño que refleja su identidad única.',
+
+  },
 ];
