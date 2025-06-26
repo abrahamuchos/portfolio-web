@@ -4,6 +4,8 @@ import Slider from "react-slick";
 
 import Stack from "../Stack.jsx";
 import ProjectControls from "../ProjectControls.jsx";
+import ImageGallery from "../ImageGallery.jsx";
+import { getGalleryImageURL } from "../../utils/image.js";
 import { posts } from "../../assets/data/posts.js";
 
 import iconLeft from "../../assets/icons/left-minimal-white.svg";
@@ -13,9 +15,12 @@ import imgMacHome from "../../assets/images/projects/comgrafic/content/mac-displ
 import imgMacPrint from "../../assets/images/projects/comgrafic/content/Macbook - Services Print.png";
 import imgMacContactUs from "../../assets/images/projects/comgrafic/content/MacBook - Contact Us.png";
 import imgMacContactMaps from "../../assets/images/projects/comgrafic/content/Macbook - Contact us Maps.png";
+import imgAdminBlog from "../../assets/images/projects/comgrafic/content/Large Screen - Admin Blog List.png";
+import imgAdminBlogEdit from "../../assets/images/projects/comgrafic/content/Large Screen - Admin Blog.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 export default function Comgrafic() {
   let sliderRef = useRef(null);
@@ -27,6 +32,91 @@ export default function Comgrafic() {
     {name: 'SCSS', icon: 'sass-color-logo.png'},
     {name: 'Trello', icon: 'trello-color-logo.png'},
     {name: 'Slack', icon: 'slack-color-logo.png'},
+  ];
+
+  const images = [
+    {
+      id: 1,
+      alt: 'home-screen',
+      src: getGalleryImageURL('comgrafic', 'home espanol 1 - 1.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'home espanol 1 - 1_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 3417,
+      caption: 'Home - En Español'
+    },
+    {
+      id: 2,
+      alt: 'home-menu',
+      src: getGalleryImageURL('comgrafic', 'comgrafic-multilingual.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'comgrafic-multilingual_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 812,
+      caption: 'El menu nos despliega los idiomas disponibles'
+    },
+    {
+      id: 3,
+      alt: 'home-screen-catalan',
+      src: getGalleryImageURL('comgrafic', 'home catalan 1 - 3.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'home catalan 1 - 3_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 3417,
+      caption: 'Home - En Catalan'
+    },
+    {
+      id: 4,
+      alt: 'servicios-encuadernancion',
+      src: getGalleryImageURL('comgrafic', 'servicios encuadernacion 1 - 1.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'servicios encuadernacion 1 - 1_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 2994,
+      caption: 'Servicios de encuadernación'
+    },
+    {
+      id: 5,
+      alt: 'servicios-impresion',
+      src: getGalleryImageURL('comgrafic', 'servicios impresion 1 - 1.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'servicios impresion 1 - 1_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 2597,
+      caption: 'Servicios de impresión'
+    },
+    {
+      id: 6,
+      alt: 'servicios-preimpresion',
+      src: getGalleryImageURL('comgrafic', 'servicios pre impresion 1 - 1.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'servicios pre impresion 1 - 1_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 2957,
+      caption: 'Servicios de preimpresión'
+    },
+    {
+      id: 7,
+      alt: 'servicios-digital',
+      src: getGalleryImageURL('comgrafic', 'servicos impresion digital 1 - 1.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'servicos impresion digital 1 - 1_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 2208,
+      caption: 'Servicios de impresión digital'
+    },
+    {
+      id: 8,
+      alt: 'presupuesto',
+      src: getGalleryImageURL('comgrafic', 'solicitar presupeusto 1 - 1.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'solicitar presupeusto 1 - 1_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 1702,
+      caption: 'Desde la web de Comgrafic puedes solicitar tu presupuesto'
+    },
+    {
+      id: 9,
+      alt: 'contact',
+      src: getGalleryImageURL('comgrafic', 'contactanos 1 - 1.png'),
+      thumbnail: getGalleryImageURL('comgrafic', 'contactanos 1 - 1_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 1760,
+      caption: 'Contactanos'
+    },
+
   ];
 
   const carouselSettings = {
@@ -266,6 +356,89 @@ export default function Comgrafic() {
       </section>
       {/* End Card Carousel*/}
 
+
+      {/*Tecnología y Proceso.*/}
+      <section className='wrap mt-36'>
+        <div className="flex flex-col items-start">
+          <h2 className="heading-2 w-full mb-8">
+            Tecnología y Proceso.
+          </h2>
+
+          <p className="content-small post-paragraph text-left">
+            Elegimos <span className="highlight">Laravel</span> por su robustez, las soluciones pre-construidas que
+            ofrece y la aceleración en el desarrollo que permite, traduciéndose en eficiencia y
+            <span className="highlight"> optimización de costos</span> para el cliente. Para la gestión de tareas y la
+            colaboración dentro del equipo (diseñadores y programadores), utilizamos herramientas como
+            <span className="highlight"> Trello</span> y <span className="highlight"> Slack</span>, bajo la coordinación
+            de un
+            gerente de proyecto.
+          </p>
+        </div>
+
+        {/*Two Cards*/}
+        <div className="flex flex-col gap-y-10 items-stretch mt-16 sm:flex-row sm:gap-x-2.5 lg:gap-x-5">
+          <div className="w-full flex sm:w-1/2 lg:w-[60%]">
+            <div className="card tertiary flex flex-col ">
+              <div className="pl-8 pt-5 mb-5 sm:mb-7 md:px-12 md:pt-9 lg:px-10">
+                <h4 className="post-paragraph highlight">
+                  Admin Blog. <br/>
+                  Lista y controla todas las entradas del Blog.
+                </h4>
+              </div>
+              <div className="w-full flex-grow flex items-end justify-start">
+                <img src={imgAdminBlog} alt="admin-blog-list" className='w-full lg:w-[450px]'/>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full flex sm:w-1/2 lg:w-[40%]">
+            <div className="card tertiary flex flex-col">
+              <div className="pl-8 pt-5 mb-5 sm:mb-7 md:px-12 md:pt-9 lg:px-10">
+                <h4 className="post-paragraph highlight">
+                  Entradas al Blog. <br/>
+                  Crea, actualizar y elimina entradas.
+                </h4>
+              </div>
+              <div className="w-full flex-grow flex items-end justify-center">
+                <img src={imgAdminBlogEdit} alt="admmin-blog-edit" className='w-full lg:w-[450px]'/>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*End Two Cards*/}
+      </section>
+      {/* End Tecnología y Proceso.*/}
+
+      {/*Conclusion*/}
+      <section className='wrap mt-40 lg:mt-44'>
+        <div className="w-full flex justify-center">
+          <motion.p
+            className='content-small post-paragraph text-center'
+            initial={{opacity: 0, y: 50}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: false}}
+            transition={{duration: 0.6, delay: 0.7, ease: "easeOut"}}
+          >
+            Fue un desafío gratificante lograr que la web reflejara la <span className="highlight">estética tan particular y única</span> de
+            Comgrafic, distinta a cualquier proyecto anterior. Asimismo, la implementación del <span
+            className="highlight">sistema multilenguaje</span> representó un esfuerzo significativo y exitoso
+            que <span
+            className="highlight">añadió un gran valor</span> al cliente. Este proyecto reforzó mis habilidades en el
+            desarrollo con Laravel, la gestión de bases de datos, y la <span className="highlight">colaboración con equipos de diseño</span>.
+          </motion.p>
+        </div>
+      </section>
+      {/* End Conclusion*/}
+
+      {/*Gallery*/}
+      {
+        images.length ?
+          <section className='wrap w-full mt-20'>
+            <ImageGallery images={images}/>
+          </section>
+          : ''
+      }
+      {/*End Gallery*/}
 
       <ProjectControls className='mt-32 mb-16' postId={post.id}/>
     </>
