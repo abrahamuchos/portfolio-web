@@ -206,7 +206,7 @@ body {
   }
 
   .content-medium{
-    @apply w-[650px]
+    @apply w-full md:w-[600px] lg:w-[650px]
   }
 
   /* End Contents Paragraphs */
