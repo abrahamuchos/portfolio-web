@@ -204,44 +204,46 @@ export default function Comgrafic() {
           }} {...carouselSettings} >
 
             <div className="px-1 lg:px-4">
-              <div className="card tertiary px-8 pt-5 md:pl-12 md:pt-9 lg:pl-20">
-                <h4 className='post-paragraph highlight mb-10'>
-                  Servicios disponibles.<br/>
-                  Permite mostrar todos los servicios que ofrece Comgrafic.
-                </h4>
+              <div className="card tertiary ">
+                <div className="h-[132px] px-8 pt-5 mb-5 sm:h-[100px] md:pl-12 md:pt-9 lg:pl-20">
+                  <h4 className='post-paragraph highlight'>
+                    Servicios disponibles.<br/>
+                    Permite mostrar todos los servicios que ofrece Comgrafic.
+                  </h4>
+                </div>
 
                 <div className="flex justify-center">
                   <img src={imgMacPrint} alt="calendar"
-                       className='w-[300px] sm:w-[415px] md:w-[550px] lg:w-[620px] xl:w-[972px]'/>
+                       className='w-[290px] sm:w-[415px] md:w-[550px] lg:w-[630px] xl:w-[847px]'/>
                 </div>
               </div>
             </div>
 
             <div className="px-1 lg:px-4">
               <div className="card tertiary ">
-                <div className="px-8 pt-5 md:pl-12 md:pt-9 lg:pl-20">
-                  <h4 className='post-paragraph highlight mb-12 sm:mb-10 lg:mb-5'>
+                <div className="h-[132px] px-8 pt-5 mb-5 sm:h-[100px] md:pl-12 md:pt-9 lg:pl-20">
+                  <h4 className='post-paragraph highlight'>
                     Contacto.<br/>
                     Permite a los posibles clientes contactar a Comgrafic.
                   </h4>
                 </div>
                 <div className="flex justify-end">
                   <img src={imgMacContactUs} alt="calendar"
-                       className='pl-8 w-[290px] sm:w-[415px] md:w-[550px] lg:w-[620px] xl:w-[820px]'/>
+                       className='pl-8 w-[300px] sm:w-[415px] md:w-[550px] lg:w-[620px] xl:w-[820px]'/>
                 </div>
               </div>
             </div>
 
             <div className="px-1 lg:px-4">
               <div className="card tertiary ">
-                <div className="px-8 pt-5 md:pl-12 md:pt-9 lg:pl-20">
-                  <h4 className='post-paragraph highlight mb-12 sm:mb-10 lg:mb-5'>
+                <div className="h-[132px] px-8 pt-5 mb-5 sm:h-[100px] md:pl-12 md:pt-9 lg:pl-20">
+                  <h4 className='post-paragraph highlight'>
                     Mapas, claro que sí.<br/>
                     También si nos desea visitar, le mostramos donde nos puede ubicar.
                   </h4>
                 </div>
                 <img src={imgMacContactMaps} alt="calendar"
-                     className='pr-8 w-[290px] sm:w-[415px] md:w-[550px] lg:w-[620px] xl:w-[820px]'/>
+                     className='pr-8 w-[300px] sm:w-[415px] md:w-[550px] lg:w-[620px] xl:w-[812px]'/>
               </div>
             </div>
           </Slider>
