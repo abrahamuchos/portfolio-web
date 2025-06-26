@@ -410,7 +410,7 @@ export default function Comgrafic() {
       {/* End Tecnología y Proceso.*/}
 
       {/*Conclusion*/}
-      <section className='wrap mt-40 lg:mt-44'>
+      <section className='wrap my-40 lg:my-44'>
         <div className="w-full flex justify-center">
           <motion.p
             className='content-small post-paragraph text-center'
