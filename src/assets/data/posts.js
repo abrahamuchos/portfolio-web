@@ -81,7 +81,7 @@ export const posts = [
     slug: "mercado-del-arte-en-venezuela",
     subtitle: "Laravel, Blade, Bootstrap y Postgre",
     header: {
-      src: getHeaderImageURL('diverxo', 'header-diverxo-1x-compress.webp'),
+      src: getHeaderImageURL('diverxo', 'header-diverxo-1x-compress.png'),
       card: getHeaderImageURL('diverxo', 'header-diverxo-1x_thumbnail_900x500.jpg', true),
       alt: 'Diverxo Art gallery'
     },
