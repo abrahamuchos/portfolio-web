@@ -12,7 +12,7 @@ import imgIphoneHome from "../../assets/images/projects/diverxo/content/iphone-h
 export default function Diverxo() {
   const imgRef = useRef(null);
   const [viewport, setViewport] = useState(/**@type{string}**/ 'xs');
-  const isInView = useInView(imgRef, {once: false, amount: 1});
+  const isInView = useInView(imgRef, {once: true, amount: 1});
   const post = posts.find(post => post.id === 5);
   const stacks = [
     {name: 'Laravel', icon: 'laravel-color-logo.png'},
@@ -44,58 +44,74 @@ export default function Diverxo() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const iphoneVariants = {
-    initial: {
-      transform:
-        viewport === 'xs'
-          ? "translate(-200%, 145%)"
-          : viewport === 'sm'
-            ? "translate(-200%, 175%)"
-            : viewport === 'md'
-              ? "translate(-200%, 142%)"
-              : viewport === 'lg'
-                ? "translate(-200%, 165%)"
-                : "translate(-200%, 196%)"
+  /**
+   * Positions for the iPhone Screen image in different viewports
+   * @type {{xl: {initial: {x: string, y: string}, animate: {x: string, y: string}}, md: {initial: {x: string, y: string}, animate: {x: string, y: string}}, sm: {initial: {x: string, y: string}, animate: {x: string, y: string}}, xs: {initial: {x: string, y: string}, animate: {x: string, y: string}}, lg: {initial: {x: string, y: string}, animate: {x: string, y: string}}}}
+   */
+  const iphonePositions = {
+    xs: {
+      initial: { x: "-200%", y: "145%" },
+      animate: { x: "-230%", y: "145%" }
     },
-    animate: {
-      transform:
-        viewport === 'xs'
-          ? "translate(-230%, 145%)"
-          : viewport === 'sm'
-            ? "translate(-250%, 175%)"
-            : viewport === 'md'
-              ? "translate(-285%, 142%)"
-              : viewport === 'lg'
-                ? "translate(-310%, 165%)"
-                : "translate(-340%, 196%)"
-    }
+    sm: {
+      initial: { x: "-200%", y: "175%" },
+      animate: { x: "-250%", y: "175%" }
+    },
+    md: {
+      initial: { x: "-200%", y: "142%" },
+      animate: { x: "-285%", y: "142%" }
+    },
+    lg: {
+      initial: { x: "-200%", y: "165%" },
+      animate: { x: "-310%", y: "165%" }
+    },
+    xl: {
+      initial: { x: "-200%", y: "196%" },
+      animate: { x: "-340%", y: "196%" }
+    },
   };
 
-  const macbookVariants = {
-    initial: {
-      transform:
-        viewport === 'xs'
-          ? "translate(-10%, 122%)"
-          : viewport === 'sm'
-            ? "translate(-10%, 116%)"
-            : viewport === 'md'
-              ? "translate(-10%, 121%)"
-              : viewport === 'lg'
-                ? "translate(-10%, 116%)"
-                : "translate(-10%, 116%)"
+  /**
+   * Positions for the MacBook image in different screen sizes.
+   * @type {{xl: {initial: {x: string, y: string}, animate: {x: string, y: string}}, md: {initial: {x: string, y: string}, animate: {x: string, y: string}}, sm: {initial: {x: string, y: string}, animate: {x: string, y: string}}, xs: {initial: {x: string, y: string}, animate: {x: string, y: string}}, lg: {initial: {x: string, y: string}, animate: {x: string, y: string}}}}
+   */
+  const macbookPositions = {
+    xs: {
+      initial: { x: "-10%", y: "122%" },
+      animate: { x: "10%", y: "122%" }
     },
-    animate: {
-      transform:
-        viewport === 'xs'
-          ? "translate(10%, 122%)"
-          : viewport === 'sm'
-            ? "translate(1%, 116%)"
-            : viewport === 'md'
-              ? "translate(3%, 121%)"
-              : viewport === 'lg'
-                ? "translate(6%, 116%)"
-                : "translate(10%, 116%)"
-    }
+    sm: {
+      initial: { x: "-10%", y: "116%" },
+      animate: { x: "1%", y: "116%" }
+    },
+    md: {
+      initial: { x: "-10%", y: "121%" },
+      animate: { x: "3%", y: "121%" }
+    },
+    lg: {
+      initial: { x: "-10%", y: "116%" },
+      animate: { x: "6%", y: "116%" }
+    },
+    xl: {
+      initial: { x: "-10%", y: "116%" },
+      animate: { x: "10%", y: "116%" }
+    },
+  };
+
+  /**
+   * @type {import('framer-motion').Variants}
+   */
+  const iphoneVariants = {
+    initial: iphonePositions[viewport]?.initial,
+    animate: iphonePositions[viewport]?.animate,
+  };
+
+  /**
+   * @type {import('framer-motion').Variants}
+   */
+  const macbookVariants = {
+    initial: macbookPositions[viewport]?.initial,
+    animate: macbookPositions[viewport]?.animate,
   };
 
 
