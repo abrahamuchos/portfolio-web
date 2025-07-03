@@ -23,27 +23,6 @@ export default function Diverxo() {
     {name: 'Git', icon: 'git-color-logo.png'},
   ];
 
-  useEffect(() => {
-    const handleResize = () => {
-      if(window.innerWidth < 640){
-        setViewport('xs');
-      } else if(window.innerWidth >= 640 && window.innerWidth < 768){
-        setViewport('sm');
-      } else if(window.innerWidth >= 768 && window.innerWidth < 1024){
-        setViewport('md');
-      } else if(window.innerWidth >= 1024 && window.innerWidth < 1280){
-        setViewport('lg');
-      } else {
-        setViewport('xl');
-      }
-    }
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   /**
    * Positions for the iPhone Screen image in different viewports
    * @type {{xl: {initial: {x: string, y: string}, animate: {x: string, y: string}}, md: {initial: {x: string, y: string}, animate: {x: string, y: string}}, sm: {initial: {x: string, y: string}, animate: {x: string, y: string}}, xs: {initial: {x: string, y: string}, animate: {x: string, y: string}}, lg: {initial: {x: string, y: string}, animate: {x: string, y: string}}}}
@@ -114,6 +93,26 @@ export default function Diverxo() {
     animate: macbookPositions[viewport]?.animate,
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if(window.innerWidth < 640){
+        setViewport('xs');
+      } else if(window.innerWidth >= 640 && window.innerWidth < 768){
+        setViewport('sm');
+      } else if(window.innerWidth >= 768 && window.innerWidth < 1024){
+        setViewport('md');
+      } else if(window.innerWidth >= 1024 && window.innerWidth < 1280){
+        setViewport('lg');
+      } else {
+        setViewport('xl');
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
@@ -168,7 +167,7 @@ export default function Diverxo() {
           initial='initial'
           variants={iphoneVariants}
           animate={isInView ? "animate" : "initial"}
-          transition={{duration: 3.0, ease: [.01, .47, .99, .33]}}
+          transition={{duration: 3.0, ease: [0.17, 0.84, 0.44, 1]}}
         />
         <motion.img
           src={imgMacbookHome}
@@ -178,7 +177,7 @@ export default function Diverxo() {
           initial='initial'
           variants={macbookVariants}
           animate={isInView ? "animate" : "initial"}
-          transition={{duration: 3.0, ease: [.01, .47, .99, .33]}}
+          transition={{duration: 3.0, ease: [0.17, 0.84, 0.44, 1]}}
         />
       </div>
       {/*End Devices animation*/}
