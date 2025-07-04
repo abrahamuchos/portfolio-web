@@ -22,9 +22,13 @@ import imgMacbookAdminArtistEdit from "../../assets/images/projects/diverxo/cont
 import imgMacbookAdminAuction from "../../assets/images/projects/diverxo/content/macbook-admin-auction.png";
 import imgMacbookAdminDashboard from "../../assets/images/projects/diverxo/content/macbook-admin-dashboard.png";
 import imgMacbookAdminProducts from "../../assets/images/projects/diverxo/content/macbook-admin-products.png";
+import videoHome from "../../assets/videos/projects/diverxo/home-video-980x558.mp4";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import VideoOnScroll from "../VideoOnScroll.jsx";
+import ImageGallery from "../ImageGallery.jsx";
+import { getGalleryImageURL } from "../../utils/image.js";
 
 export default function Diverxo() {
   const imgRef = useRef(null);
@@ -36,6 +40,7 @@ export default function Diverxo() {
     {name: 'Laravel', icon: 'laravel-color-logo.png'},
     {name: 'PostgreSQL', icon: 'postgres-color-logo.png'},
     {name: 'Bootstrap', icon: 'bootstrap-color-logo.png'},
+    {name: 'Stripe', icon: 'stripe-color-icon.jpeg', className: 'w-[18px]'},
     {name: 'SCSS', icon: 'sass-color-logo.png'},
     {name: 'Trello', icon: 'trello-color-logo.png'},
     {name: 'Git', icon: 'git-color-logo.png'},
@@ -148,6 +153,154 @@ export default function Diverxo() {
     initial: macbookPositions[viewport]?.initial,
     animate: macbookPositions[viewport]?.animate,
   };
+
+  const images =[
+    {
+      id: 1,
+      alt: 'home-desktop',
+      src: getGalleryImageURL('diverxo', 'home.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'home_thumbnail_1024x640.jpg', true),
+      width: 1432,
+      height: 4096,
+      caption: 'Home de Diverxo Art Gallery'
+    },
+    {
+      id: 2,
+      alt: 'home-mobile',
+      src: getGalleryImageURL('diverxo', 'home-mobile.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'home-mobile_thumbnail_1024x640.jpg', true),
+      width: 324,
+      height: 4096,
+      caption: 'Vista mobile de Home'
+    },
+    {
+      id: 3,
+      alt: 'login',
+      src: getGalleryImageURL('diverxo', 'login.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'login_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 786,
+      caption: 'Inicio de sesión'
+    },
+    {
+      id: 4,
+      alt: 'login-mobile',
+      src: getGalleryImageURL('diverxo', 'login-mobile.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'login-mobile_thumbnail_1024x640.jpg', true),
+      width: 425,
+      height: 872,
+      caption: 'Inicio de sesión en versión mobile'
+    },
+    {
+      id: 5,
+      alt: 'register',
+      src: getGalleryImageURL('diverxo', 'register.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'register_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 900,
+      caption: 'Formulario de registro, para los nuevos usuarios'
+    },
+    {
+      id: 6,
+      alt: 'shop',
+      src: getGalleryImageURL('diverxo', 'shop.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'shop_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 3491,
+      caption: 'Shop, todas las obra de artes disponibles'
+    },
+    {
+      id: 7,
+      alt: 'shop-filter',
+      src: getGalleryImageURL('diverxo', 'shop-with-filter-special-features.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'shop-with-filter-special-features_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 3491,
+      caption: 'Filtros para facilitar la búsqueda de las obras'
+    },
+    {
+      id: 8,
+      alt: 'products-detail',
+      src: getGalleryImageURL('diverxo', 'products-details.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'products-details_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 2255,
+      caption: 'Detalle de la obra de arte, con información y botón para agregar al carrito de compra'
+    },
+    {
+      id: 9,
+      alt: 'products-detail-auction-mobile',
+      src: getGalleryImageURL('diverxo', 'products-details-auction.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'products-details-auction_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 2716,
+      caption: 'Para las obras de arte que se subasten, se muestra un contador de tiempo para la subasta'
+    },
+    {
+      id: 10,
+      alt: 'products-detail-auction-mobile',
+      src: getGalleryImageURL('diverxo', 'products-details-acution-home.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'products-details-acution-home_thumbnail_1024x640.jpg', true),
+      width: 425,
+      height: 3476,
+      caption: 'Subastas disponibles en versión mobile'
+    },
+    {
+      id: 11,
+      alt: 'shopping-cart',
+      src: getGalleryImageURL('diverxo', 'shopping-cart.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'shopping-cart_thumbnail_1024x640.jpg', true),
+      width: 1455,
+      height: 1568,
+      caption: 'Carrito de compras'
+    },
+    {
+      id: 12,
+      alt: 'shopping-cart-mobile',
+      src: getGalleryImageURL('diverxo', 'shopping-cart-mobile.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'shopping-cart-mobile_thumbnail_1024x640.jpg', true),
+      width: 425,
+      height: 1944,
+      caption: 'Carrito de compras también en mobile'
+    },
+    {
+      id: 13,
+      alt: 'dashboard-admin',
+      src: getGalleryImageURL('diverxo', 'dashboard-admin.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'dashboard-admin_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 3047,
+      caption: 'Administrador con panel informativo, ventas, ordenas, usuarios, etc.'
+    },
+    {
+      id: 14,
+      alt: 'admin-products',
+      src: getGalleryImageURL('diverxo', 'admin-products.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'admin-products_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 2215,
+      caption: 'Administrador, nos permite gestionar los productos (obras de arte)'
+    },
+    {
+      id: 15,
+      alt: 'admin-artist-create',
+      src: getGalleryImageURL('diverxo', 'admin-artist-create.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'admin-artist-create_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 845,
+      caption: 'Crear, editar o eliminar artistas, categorías, y productos. Formularios para todo ello'
+    },
+
+    {
+      id: 16,
+      alt: 'admin-auction',
+      src: getGalleryImageURL('diverxo', 'admin-auction.png'),
+      thumbnail: getGalleryImageURL('diverxo', 'admin-auction_thumbnail_1024x640.jpg', true),
+      width: 1440,
+      height: 996,
+      caption: 'Monitorea las subastas y gestiona'
+    },
+  ];
 
   useEffect(() => {
     const handleResize = () => {
@@ -399,7 +552,7 @@ export default function Diverxo() {
           </div>
         </div>
 
-      {/* Entre mis responsabilidades */}
+        {/* Entre mis responsabilidades */}
         <div className="wrap mt-20 lg:mt-28">
           <h4 className='heading-3 mb-7'>Entre mis responsabilidades se incluyeron</h4>
 
@@ -422,19 +575,21 @@ export default function Diverxo() {
             </div>
             <div className="post-paragraph-2">
               <span className="highlight">Subastas y control</span><br/>
-              Desarrollo de una sección de subastas, donde los usuarios pueden ofertar y el administrador puede gestionar las mismas.
+              Desarrollo de una sección de subastas, donde los usuarios pueden ofertar y el administrador puede
+              gestionar las mismas.
             </div>
             <div className="post-paragraph-2">
               <span className="highlight">Administrador</span><br/>
-              Creación de un panel de administración intuitivo para la gestión de productos, pedidos, subastas y análisis de datos.
+              Creación de un panel de administración intuitivo para la gestión de productos, pedidos, subastas y
+              análisis de datos.
             </div>
           </div>
         </div>
-      {/* End Entre mis responsabilidades */}
+        {/* End Entre mis responsabilidades */}
       </section>
 
       {/* Card Carousel*/}
-      <section className='mt-16'>
+      <section className='mt-20 lg:mt-28'>
         <div className="slider-container">
           <Slider ref={slider => {
             sliderRef = slider
@@ -518,6 +673,21 @@ export default function Diverxo() {
         {/*End Carousel Controls*/}
       </section>
       {/* End Card Carousel*/}
+
+      {/*Video*/}
+      <section className="wrap mt-32 w-ful flex justify-center lg:mt-48">
+        <VideoOnScroll src={videoHome} className={'rounded-2xl w-[980px]'}/>
+      </section>
+      {/*Video*/}
+
+      {/*Gallery*/}
+      {images.length ?
+        <section className='wrap w-full mt-32 lg:mt-48'>
+          <ImageGallery images={images}/>
+        </section>
+        : ''
+      }
+      {/*End Gallery*/}
 
       <ProjectControls className='mt-32 mb-16' postId={post.id}/>
     </>
