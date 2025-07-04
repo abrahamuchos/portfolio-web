@@ -74,4 +74,17 @@ export const posts = [
     description: 'Desarrollo completo de la nueva web para Comgrafic, empresa líder en impresión, con un robusto sistema multilenguaje y un diseño que refleja su identidad única.',
 
   },
+  {
+    id: 5,
+    order: 5,
+    title: "Mercado del Arte en Venezuela",
+    slug: "mercado-del-arte-en-venezuela",
+    subtitle: "Laravel, Blade, Bootstrap y Postgre",
+    header: {
+      src: getHeaderImageURL('diverxo', 'header-diverxo-1x-compress.png'),
+      card: getHeaderImageURL('diverxo', 'header-diverxo-1x_thumbnail_900x500.jpg', true),
+      alt: 'Diverxo Art gallery'
+    },
+    description: 'En un mercado con una profunda riqueza cultural pero con una limitada presencia digital, nació una idea audaz: crear el primer e-commerce de arte en Venezuela. ',
+  },
 ];
