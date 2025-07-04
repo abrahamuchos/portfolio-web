@@ -529,7 +529,7 @@ export default function Diverxo() {
 
 
       <section className="mt-32">
-        <h2 className="heading-2 w-full text-center mb-10 mb-16">
+        <h2 className="heading-2 w-full text-center mb-10 lg:mb-16">
           El Arte Detrás del Arte:<br/>
           Mi Pincelada Full-Stack.
         </h2>
@@ -621,7 +621,7 @@ export default function Diverxo() {
                 </div>
                 <div className="flex justify-end">
                   <img src={imgMacbookAdminProducts} alt="macbook-admin-products"
-                       className='pl-8 w-[300px] sm:w-[415px] md:w-[570px] lg:w-[650px] xl:w-[820px]'/>
+                       className='pl-8 w-[317px] sm:w-[440px] md:w-[570px] lg:w-[650px] xl:w-[820px]'/>
                 </div>
               </div>
             </div>
@@ -637,7 +637,7 @@ export default function Diverxo() {
 
                 <div className="flex justify-center">
                   <img src={imgMacbookAdminAuction} alt="macbook-admin-auction"
-                       className='w-[290px] sm:w-[415px] md:w-[512px] lg:w-[580px] xl:w-[736px]'/>
+                       className='w-[267px] sm:w-[382px] md:w-[512px] lg:w-[580px] xl:w-[736px]'/>
                 </div>
               </div>
             </div>
@@ -651,14 +651,14 @@ export default function Diverxo() {
                   </h4>
                 </div>
                 <img src={imgMacbookAdminArtistEdit} alt="macbook-artist-edit"
-                     className='pr-8 w-[300px] sm:w-[415px] md:w-[570px] lg:w-[650px] xl:w-[810px]'/>
+                     className='pr-8 w-[316px] sm:w-[440px] md:w-[570px] lg:w-[650px] xl:w-[810px]'/>
               </div>
             </div>
           </Slider>
         </div>
 
         {/*Carousel Controls*/}
-        <div className="wrap flex justify-end gap-5">
+        <div className="wrap flex justify-end gap-5 mt-5">
           <div className="carousel-controls p-2.5">
             <a onClick={handlePrev}>
               <img src={iconLeft} alt="left-icon" className='w-[20px] h-[20px] text-white'/>
