@@ -461,29 +461,29 @@ export default function Diverxo() {
             <div className="flex flex-col flex-grow w-full md:flex-row md:w-[60%] ">
               <img src={imgScreenProductDetail} alt="screen-product-detail" className='w-full rounded-2xl'/>
               <div className="w-full mt-5 md:hidden">
-                <span className="highlight">Coleccionistas de arte</span><br/>
-                Que buscan una plataforma segura y fácil de usar para adquirir obras de arte exclusivas.
+                <span className="highlight">Subasta de arte</span><br/>
+                La plataforma brinda la posibilidad de subastar obras de arte, permitiendo a los usuarios pujar por piezas únicas y exclusivas.
               </div>
             </div>
 
             <div className="flex flex-col flex-grow w-full md:flex-row md:w-[40%]">
               <img src={imgScreenShopFilter} alt="screen-shop-filter" className='w-full rounded-2xl'/>
               <div className="w-full mt-5 md:hidden">
-                <span className="highlight">Coleccionistas de arte</span><br/>
-                Que buscan una plataforma segura y fácil de usar para adquirir obras de arte exclusivas.
+                <span className="highlight">Filtros de búsqueda</span><br/>
+                Facilita al usuario encontrar obras de arte específicas según sus preferencias y criterios.
               </div>
             </div>
           </div>
           {/*MD Legend*/}
           <div className="hidden flex-col gap-y-10 md:flex md:flex-row md:gap-x-2.5 lg:gap-x-5">
             <div className="w-[60%] post-paragraph-2 mt-5 pr-5 md:pr-[10%] lg:pr-[20%]">
-              <span className="highlight">Coleccionistas de arte</span><br/>
-              Que buscan una plataforma segura y fácil de usar para adquirir obras de arte exclusivas.
+              <span className="highlight">Subasta de arte</span><br/>
+              La plataforma brinda la posibilidad de subastar obras de arte, permitiendo a los usuarios hacer una oferta por piezas únicas y exclusivas.
             </div>
 
             <div className="w-[40%] post-paragraph-2 mt-5 pr-0 lg:pr-10">
-              <span className="highlight">Coleccionistas de arte2</span><br/>
-              Que buscan una plataforma segura y fácil de usar para adquirir obras de arte exclusivas.
+              <span className="highlight">Filtros de búsqueda</span><br/>
+              Facilita al usuario encontrar obras de arte específicas según sus preferencias y criterios.
             </div>
           </div>
           {/*End MD Legend*/}
@@ -496,8 +496,8 @@ export default function Diverxo() {
             <div className="flex flex-col flex-grow w-full md:flex-row md:w-[40%]">
               <img src={imgScreenProductDetailShop} alt="screen-shop-filter" className='w-full rounded-2xl'/>
               <div className="w-full mt-5 md:hidden">
-                <span className="highlight">Coleccionistas de arte</span><br/>
-                Que buscan una plataforma segura y fácil de usar para adquirir obras de arte exclusivas.
+                <span className="highlight">Compra obras de arte</span><br/>
+                Un ecosistemas donde es posible hacer compras de obras de arte de manera segura y fácil.
               </div>
             </div>
 
@@ -513,12 +513,12 @@ export default function Diverxo() {
           {/*MD Legend*/}
           <div className="hidden flex-col gap-y-10 md:flex md:flex-row md:gap-x-2.5 lg:gap-x-5">
             <div className="w-[40%] post-paragraph-2 mt-5 pr-0 lg:pr-10">
-              <span className="highlight">Coleccionistas de arte2</span><br/>
-              Que buscan una plataforma segura y fácil de usar para adquirir obras de arte exclusivas.
+              <span className="highlight">Compra obras de arte</span><br/>
+              Un ecosistemas donde es posible hacer compras de obras de arte de manera segura y fácil.
             </div>
             <div className="w-[60%] post-paragraph-2 mt-5 pr-5 md:pr-[10%] lg:pr-[20%]">
-              <span className="highlight">Coleccionistas de arte</span><br/>
-              Que buscan una plataforma segura y fácil de usar para adquirir obras de arte exclusivas.
+              <span className="highlight">Carro de compras</span><br/>
+              Es el lugar donde puedes añadir tus obras favoritas y realizar el pago de manera segura.
             </div>
           </div>
           {/*End MD Legend*/}
