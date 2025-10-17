@@ -19,9 +19,9 @@ export default function Hero() {
       </div>
 
       <div className="w-full md:1/2 lg:w-1/3 flex justify-center lg:justify-end">
-        <Terminal>
-          laravel new abrahamuchos-portfolio
-        </Terminal>
+        <Terminal
+          text={'$ laravel new abrahamuchos-portfolio'}
+        />
       </div>
     </section>
   );

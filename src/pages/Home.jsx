@@ -13,41 +13,41 @@ export default function Home() {
       <Hero/>
 
       <div className='relative my-10 lg:mt-0 lg:mb-14'>
-        <SeparatorCommand>
-          php artisan serve
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan serve'
+        />
       </div>
 
       <AboutUs id='about-me'/>
 
       <div className='relative my-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan show:skills
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan show:skills'
+        />
       </div>
 
       <Skills id='skills'/>
 
       <div className='relative mb-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan show:skills --softs
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan show:skills --softs'
+        />
       </div>
 
       <SoftSkills/>
 
       <div className='relative my-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan show:projects
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan show:projects'
+        />
       </div>
 
       <Projects/>
 
       <div className='relative my-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan contact:list
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan contact:list'
+        />
       </div>
 
       <section id='contact' className='wrap w-full mt-16 mb-20'>

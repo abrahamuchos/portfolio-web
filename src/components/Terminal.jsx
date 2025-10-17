@@ -1,13 +1,15 @@
+import TypingText from "./text-animation/TypingText.jsx";
+
 import "../styles/terminal.css";
 
 /**
  *
- * @param title
- * @param children
+ * @param {string} [title="abraham@mac-os"]
+ * @param {string} text
  * @returns {JSX.Element}
  * @constructor
  */
-export default function Terminal({title = "abraham@mac-os", children}) {
+export default function Terminal({title = "abraham@mac-os", text}) {
 
   return (
     <div className='w-[389px] h-[202px] rounded-[10px] bg-[#282828] terminal-card'>
@@ -28,7 +30,7 @@ export default function Terminal({title = "abraham@mac-os", children}) {
 
       {/*Command Prompt*/}
       <div className="px-4">
-        <p className="consola-2 mt-5">$ {children}</p>
+        <TypingText text={text} className='consola-2 mt-5' delay={3000}/>
       </div>
       {/*End Command Prompt*/}
     </div>
