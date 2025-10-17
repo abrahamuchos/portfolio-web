@@ -9,9 +9,9 @@ export default function ProjectDetailLayout() {
   return (
     <>
       <div className='relative mb-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan project:list
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan project:list'
+        />
       </div>
 
       {/*Post Project*/}
@@ -21,9 +21,9 @@ export default function ProjectDetailLayout() {
 
       {/*Contact*/}
       <div className='relative mt-20 mb-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan contact:list
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan contact:list'
+        />
       </div>
 
       <section className='w-full mt-16 mb-20 wrap'>
