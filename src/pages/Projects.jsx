@@ -12,9 +12,9 @@ export default function Projects() {
   return (
     <>
       <div className='relative mb-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan project:list
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan project:list'
+        />
       </div>
 
       <section className='wrap mb-10'>
@@ -45,9 +45,9 @@ export default function Projects() {
       </section>
 
       <div className='relative mb-10 lg:mb-12'>
-        <SeparatorCommand>
-          php artisan contact:list
-        </SeparatorCommand>
+        <SeparatorCommand
+          text='php artisan contact:list'
+        />
       </div>
 
       <section className='wrap w-full mt-16 mb-20'>
